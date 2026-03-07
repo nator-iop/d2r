@@ -1,5 +1,5 @@
 {
-    "name": "Nator v5",
+    "name": "Nator v6",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -51,7 +51,8 @@
                 "7bk",
                 "obf",
                 "obc",
-                "dre"
+                "dre",
+                "7pa"
             ]
         },
         {
