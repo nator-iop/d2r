@@ -1,5 +1,5 @@
 {
-    "name": "Nator Comb v3",
+    "name": "Nator Comb v4",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -254,6 +254,22 @@
                 "xrs",
                 "9fc",
                 "9wn"
+            ]
+        },
+        {
+            "name": "Pre-BiS Bases Except",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "xsk",
+                "xh9",
+                "xea",
+                "xrs",
+                "xtp"
             ]
         },
         {
