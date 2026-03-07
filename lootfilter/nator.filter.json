@@ -1,5 +1,5 @@
 {
-    "name": "Nator v6",
+    "name": "Nator v7",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -328,6 +328,18 @@
             "filterEtherealSocketed": false,
             "itemCode": [
                 "rvs"
+            ]
+        },
+        {
+            "name": "Magic Rings",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "magic"
+            ],
+            "equipmentCategory": [
+                "rings"
             ]
         },
         {
