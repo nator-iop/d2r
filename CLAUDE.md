@@ -9,6 +9,8 @@
 - Hammerdin build: https://maxroll.gg/d2/guides/blessed-hammer-paladin
 - Javazon build: https://maxroll.gg/d2/guides/lightning-fury-amazon-guide
 - Valuable unique/set items: https://maxroll.gg/d2/items/valuable-unique-set-items
+- Item codes (all types): lootfilter/Diablo 2 Items Codes.html
+- Item base lookup: https://diablo.fandom.com/wiki/ (append item name, e.g. Bramble_Mitts)
 
 ## Filter conventions
 
@@ -27,11 +29,9 @@
 - Runeword bases are limited to specific desirable bases, not all elite socketed items
 - Toggleable disabled rules for farming, pre-BiS gear, and leveling bases
 
-## Questionable items in BiS filter (to review later)
+## Reviewed and kept (not BiS but intentionally included)
 
-Unique rules contain some codes that may not belong:
-- `xsh` (Lidless Wall), `xsk` (Blackhorn's Face), `9cr` (Ginther's Rift) — not BiS for any build, not on maxroll valuable list
-- `ulg` (Bramble Mitts), `uth` (Lacquered Plate), `xmg` (Heavy Bracers) in Unique rules — no notable unique on these bases; they only matter in the Set rules (Laying of Hands, Tal Rasha's Guardianship, Trang-Oul's Claws)
-- `uvc` (Nosferatu's Coil), `xtp` (Que-Hegan's Wisdom) — not top BiS, not on valuable list
-- `7gd` (The Grandfather), `7gm` (Earthshifter/Cranium Basher), `7wh` (Stone Crusher/Schaefer's), `6ws` (Mang Song's Lesson) — not BiS, not on valuable list but notable drops
-- `utb`, `utc` in Unique Elite — can't identify a unique on these bases (utc is Trang-Oul's Girth which is a set item, now correctly added to Set Elite)
+- `uvc` (Nosferatu's Coil) — good melee belt, kept by choice
+- `7gd` (The Grandfather) — iconic drop, kept by choice
+- `6ws` (Mang Song's Lesson) — rare caster staff, kept by choice
+- `utb` (Mirrored Boots / Wraithstep) — D2R-added unique, kept
