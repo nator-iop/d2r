@@ -2,13 +2,12 @@
     "name": "Nator BiS",
     "rules": [
         {
-            "name": "Show Uni/Set Elite BiS",
+            "name": "Show Unique Elite BiS",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
-                "unique",
-                "set"
+                "unique"
             ],
             "equipmentQuality": [
                 "elite"
@@ -45,13 +44,12 @@
             ]
         },
         {
-            "name": "Show Uni/Set Exceptional BiS",
+            "name": "Show Unique Exceptional BiS",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
-                "unique",
-                "set"
+                "unique"
             ],
             "equipmentQuality": [
                 "exceptional"
@@ -77,13 +75,12 @@
             ]
         },
         {
-            "name": "Show Uni/Set Normal BiS",
+            "name": "Show Unique Normal BiS",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
-                "unique",
-                "set"
+                "unique"
             ],
             "equipmentQuality": [
                 "normal"
@@ -92,6 +89,41 @@
                 "tgl",
                 "mgl",
                 "tbl"
+            ]
+        },
+        {
+            "name": "Show Set Elite BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "uth",
+                "ulg"
+            ]
+        },
+        {
+            "name": "Show Set Exceptional BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "xhm",
+                "xtb",
+                "xmb",
+                "xmg",
+                "zhb"
             ]
         },
         {
@@ -135,12 +167,33 @@
             ]
         },
         {
-            "name": "Show Elite Socketed",
+            "name": "Show Runeword Bases Elite",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
                 "elite"
+            ],
+            "equipmentItemCode": [
+                "uit",
+                "utp",
+                "pab",
+                "7cr",
+                "7s8",
+                "7wc",
+                "7pa"
+            ]
+        },
+        {
+            "name": "Show Runeword Bases Normal",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "fla"
             ]
         },
         {
