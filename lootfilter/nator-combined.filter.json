@@ -1,8 +1,8 @@
 {
-    "name": "Nator Comb v1",
+    "name": "Nator Comb v2",
     "rules": [
         {
-            "name": "Show Unique Elite BiS",
+            "name": "BiS Unique Elite",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -54,7 +54,7 @@
             ]
         },
         {
-            "name": "Show Unique Exceptional BiS",
+            "name": "BiS Unique Exceptional",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -89,7 +89,7 @@
             ]
         },
         {
-            "name": "Show Unique Normal BiS",
+            "name": "BiS Unique Normal",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -106,7 +106,7 @@
             ]
         },
         {
-            "name": "Show Set Elite BiS",
+            "name": "BiS Set Elite",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -125,7 +125,7 @@
             ]
         },
         {
-            "name": "Show Set Exceptional BiS",
+            "name": "BiS Set Exceptional",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -145,7 +145,7 @@
             ]
         },
         {
-            "name": "Show Uni/Set Warlock",
+            "name": "BiS Warlock",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -158,7 +158,7 @@
             ]
         },
         {
-            "name": "Show Rare+ Accessories/Jewels",
+            "name": "Accessories",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -173,7 +173,7 @@
             ]
         },
         {
-            "name": "Show Magic Charms",
+            "name": "Charms",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -185,7 +185,7 @@
             ]
         },
         {
-            "name": "Show Runeword Bases Elite",
+            "name": "BiS Bases Elite",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
@@ -204,7 +204,7 @@
             ]
         },
         {
-            "name": "Show Runeword Bases Normal",
+            "name": "BiS Bases Normal",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
@@ -213,6 +213,45 @@
             ],
             "equipmentItemCode": [
                 "fla"
+            ]
+        },
+        {
+            "name": "Pre-BiS Unique Normal",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "vgl",
+                "tbt",
+                "dgr",
+                "skp",
+                "mbl"
+            ]
+        },
+        {
+            "name": "Pre-BiS Unique Except",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "xkp",
+                "xap",
+                "xml",
+                "xrs",
+                "9fc",
+                "9wn"
             ]
         },
         {
@@ -251,7 +290,7 @@
             ]
         },
         {
-            "name": "Hide All Items and Trash",
+            "name": "Hide All",
             "enabled": true,
             "ruleType": "hide",
             "filterEtherealSocketed": true,
