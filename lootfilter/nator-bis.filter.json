@@ -1,5 +1,5 @@
 {
-    "name": "Nator BiS v2",
+    "name": "Nator BiS v3",
     "rules": [
         {
             "name": "Show Unique Elite BiS",
@@ -40,7 +40,17 @@
                 "7dg",
                 "7sr",
                 "7s8",
-                "amf"
+                "amf",
+                "upl",
+                "uui",
+                "uhb",
+                "7cr",
+                "6cs",
+                "7b8",
+                "7bk",
+                "obf",
+                "obc",
+                "dre"
             ]
         },
         {
@@ -71,7 +81,11 @@
                 "xsh",
                 "pa9",
                 "ama",
-                "9cr"
+                "9cr",
+                "9ws",
+                "oba",
+                "baa",
+                "nea"
             ]
         },
         {
@@ -104,7 +118,10 @@
             ],
             "equipmentItemCode": [
                 "uth",
-                "ulg"
+                "ulg",
+                "paf",
+                "7ws",
+                "utc"
             ]
         },
         {
