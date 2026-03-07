@@ -1,5 +1,5 @@
 {
-    "name": "Nator BiS v1",
+    "name": "Nator BiS v2",
     "rules": [
         {
             "name": "Show Unique Elite BiS",
@@ -182,7 +182,8 @@
                 "7cr",
                 "7s8",
                 "7wc",
-                "7pa"
+                "7pa",
+                "7gm"
             ]
         },
         {
