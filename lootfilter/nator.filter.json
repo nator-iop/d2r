@@ -1,5 +1,5 @@
 {
-    "name": "Nator v10",
+    "name": "Nator v11",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -156,8 +156,7 @@
             "filterEtherealSocketed": false,
             "equipmentRarity": [
                 "rare",
-                "unique",
-                "set"
+                "unique"
             ],
             "equipmentCategory": [
                 "acce",
@@ -197,7 +196,7 @@
         },
         {
             "name": "BiS Bases Normal",
-            "enabled": true,
+            "enabled": false,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
@@ -318,6 +317,18 @@
             "filterEtherealSocketed": false,
             "itemCode": [
                 "rvs"
+            ]
+        },
+        {
+            "name": "Set Amulets",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentCategory": [
+                "amule"
             ]
         },
         {
