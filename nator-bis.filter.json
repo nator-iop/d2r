@@ -1,5 +1,5 @@
 {
-    "name": "Nator BiS",
+    "name": "Nator BiS v1",
     "rules": [
         {
             "name": "Show Unique Elite BiS",
@@ -123,7 +123,8 @@
                 "xtb",
                 "xmb",
                 "xmg",
-                "zhb"
+                "zhb",
+                "zmb"
             ]
         },
         {
