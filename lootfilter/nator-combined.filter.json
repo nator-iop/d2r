@@ -16,6 +16,7 @@
                 "uap",
                 "urn",
                 "ci3",
+                "ci2",
                 "ulc",
                 "umc",
                 "uvc",
@@ -231,7 +232,8 @@
                 "tbt",
                 "dgr",
                 "skp",
-                "mbl"
+                "mbl",
+                "bld"
             ]
         },
         {
