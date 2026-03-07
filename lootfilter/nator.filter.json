@@ -1,5 +1,5 @@
 {
-    "name": "Nator v8",
+    "name": "Nator v9",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -332,7 +332,7 @@
         },
         {
             "name": "Magic Jewels",
-            "enabled": false,
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
@@ -344,7 +344,7 @@
         },
         {
             "name": "Magic Rings",
-            "enabled": false,
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
