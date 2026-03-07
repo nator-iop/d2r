@@ -216,6 +216,41 @@
             ]
         },
         {
+            "name": "Lvl Bases Normal",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "crs",
+                "bsd",
+                "lrg",
+                "kit",
+                "pax",
+                "hal",
+                "wsc",
+                "scy"
+            ]
+        },
+        {
+            "name": "Lvl Bases Exceptional",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "9vo",
+                "9s8",
+                "9pa",
+                "9h9",
+                "9wc"
+            ]
+        },
+        {
             "name": "Hide All Items and Trash",
             "enabled": true,
             "ruleType": "hide",
