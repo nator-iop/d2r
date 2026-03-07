@@ -1,0 +1,303 @@
+{
+    "name": "Nator Combined v1",
+    "rules": [
+        {
+            "name": "Show Unique Elite BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "uap",
+                "urn",
+                "ci3",
+                "ulc",
+                "umc",
+                "uvc",
+                "uvg",
+                "ulg",
+                "uvb",
+                "utb",
+                "uit",
+                "uth",
+                "utc",
+                "usk",
+                "uhm",
+                "uar",
+                "7gw",
+                "7gd",
+                "7gm",
+                "7wh",
+                "7fl",
+                "7ws",
+                "6lw",
+                "6ws",
+                "7dg",
+                "7sr",
+                "7s8",
+                "amf",
+                "upl",
+                "uui",
+                "uhb",
+                "7cr",
+                "6cs",
+                "7b8",
+                "7bk",
+                "obf",
+                "obc",
+                "dre"
+            ]
+        },
+        {
+            "name": "Show Unique Exceptional BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "xsk",
+                "xhm",
+                "xh9",
+                "xea",
+                "xpl",
+                "xtp",
+                "xmg",
+                "xtb",
+                "xvb",
+                "xmb",
+                "xhb",
+                "zvb",
+                "zhb",
+                "xsh",
+                "pa9",
+                "ama",
+                "9cr",
+                "9ws",
+                "oba",
+                "baa",
+                "nea"
+            ]
+        },
+        {
+            "name": "Show Unique Normal BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "tgl",
+                "mgl",
+                "tbl"
+            ]
+        },
+        {
+            "name": "Show Set Elite BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "uth",
+                "ulg",
+                "paf",
+                "7ws",
+                "utc"
+            ]
+        },
+        {
+            "name": "Show Set Exceptional BiS",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "xhm",
+                "xtb",
+                "xmb",
+                "xmg",
+                "zhb",
+                "zmb"
+            ]
+        },
+        {
+            "name": "Show Uni/Set Warlock",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set",
+                "unique"
+            ],
+            "equipmentCategory": [
+                "warlo"
+            ]
+        },
+        {
+            "name": "Show Rare+ Accessories/Jewels",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "rare",
+                "unique",
+                "set"
+            ],
+            "equipmentCategory": [
+                "acce",
+                "jewel"
+            ]
+        },
+        {
+            "name": "Show Magic Charms",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "magic"
+            ],
+            "equipmentCategory": [
+                "charm"
+            ]
+        },
+        {
+            "name": "Show Runeword Bases Elite",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "uit",
+                "utp",
+                "pab",
+                "7cr",
+                "7s8",
+                "7wc",
+                "7pa",
+                "7gm"
+            ]
+        },
+        {
+            "name": "Show Runeword Bases Normal",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "fla"
+            ]
+        },
+        {
+            "name": "Leveling: Runeword Bases Normal",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "crs",
+                "bsd",
+                "lrg",
+                "kit",
+                "pax",
+                "hal",
+                "wsc",
+                "scy"
+            ]
+        },
+        {
+            "name": "Leveling: Runeword Bases Exceptional",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "9vo",
+                "9s8",
+                "9pa",
+                "9h9",
+                "9wc"
+            ]
+        },
+        {
+            "name": "Hide All Items and Trash",
+            "enabled": true,
+            "ruleType": "hide",
+            "filterEtherealSocketed": true,
+            "equipmentRarity": [
+                "rare",
+                "lowQuality",
+                "set",
+                "unique",
+                "magic",
+                "hiQuality",
+                "normal"
+            ],
+            "equipmentQuality": [
+                "normal",
+                "exceptional",
+                "elite"
+            ],
+            "equipmentCategory": [
+                "jewel",
+                "rings",
+                "armo",
+                "weap",
+                "amule"
+            ],
+            "itemCategory": [
+                "ammo",
+                "scrlt",
+                "keysr"
+            ],
+            "itemCode": [
+                "hp2",
+                "mp3",
+                "mp4",
+                "wms",
+                "hp5",
+                "hp1",
+                "rvs",
+                "hp4",
+                "mp1",
+                "mp5",
+                "mp2",
+                "yps",
+                "vps",
+                "hp3"
+            ],
+            "goldFilterValue": 5000
+        }
+    ]
+}
