@@ -1,5 +1,5 @@
 {
-    "name": "Nator v4",
+    "name": "Nator v5",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -298,6 +298,35 @@
                 "xea",
                 "xrs",
                 "xtp"
+            ]
+        },
+        {
+            "name": "All pots except minor",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "itemCode": [
+                "hp2",
+                "hp3",
+                "hp4",
+                "hp5",
+                "mp2",
+                "mp3",
+                "mp4",
+                "mp5",
+                "rvs",
+                "wms",
+                "yps",
+                "vps"
+            ]
+        },
+        {
+            "name": "All rejuvs",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "itemCode": [
+                "rvs"
             ]
         },
         {
