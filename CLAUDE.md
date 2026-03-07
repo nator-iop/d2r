@@ -19,11 +19,13 @@
 - Quality tiers: normal, exceptional, elite
 - Item code prefixes: normal = no prefix, exceptional = x/z/8/9 prefix, elite = u/7/6 prefix (varies by item type)
 
-## Nator BiS filter
+## Nator filter
 
+- Single filter file: `nator.filter.json`
 - Targets three builds: Warlock, Hammerdin, Javazon (plus merc gear and ultra-rare drops)
 - Unique and set items are in separate rules to avoid showing non-BiS items that share a base type
 - Runeword bases are limited to specific desirable bases, not all elite socketed items
+- Toggleable disabled rules for farming, pre-BiS gear, and leveling bases
 
 ## Questionable items in BiS filter (to review later)
 

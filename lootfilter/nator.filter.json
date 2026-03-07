@@ -1,5 +1,5 @@
 {
-    "name": "Nator Comb v4",
+    "name": "Nator v4",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -214,6 +214,34 @@
             ],
             "equipmentItemCode": [
                 "fla"
+            ]
+        },
+        {
+            "name": "Farm Uni/Set Elite",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique",
+                "set"
+            ],
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentCategory": [
+                "acce",
+                "armo",
+                "weap",
+                "jewel"
+            ]
+        },
+        {
+            "name": "Farm Bases Elite",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "elite"
             ]
         },
         {
