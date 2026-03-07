@@ -216,8 +216,8 @@
             ]
         },
         {
-            "name": "Leveling: Runeword Bases Normal",
-            "enabled": false,
+            "name": "Leveling Runeword Bases Normal",
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
@@ -235,8 +235,8 @@
             ]
         },
         {
-            "name": "Leveling: Runeword Bases Exceptional",
-            "enabled": false,
+            "name": "Leveling Runeword Bases Exceptional",
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
