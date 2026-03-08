@@ -1,5 +1,5 @@
 {
-    "name": "Nator v13",
+    "name": "Nator v14",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -118,7 +118,8 @@
                 "mgl",
                 "tbl",
                 "dgr",
-                "vbl"
+                "vbl",
+                "lgl"
             ]
         },
         {
@@ -299,7 +300,9 @@
                 "xml",
                 "xrs",
                 "9fc",
-                "9wn"
+                "9wn",
+                "xpk",
+                "xrs"
             ]
         },
         {
