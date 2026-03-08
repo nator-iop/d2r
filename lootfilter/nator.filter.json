@@ -1,5 +1,5 @@
 {
-    "name": "Nator v12",
+    "name": "Nator v13",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -50,6 +50,21 @@
                 "7pa",
                 "utc",
                 "umg"
+            ]
+        },
+        {
+            "name": "Eth Unique Elite",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "7gm"
             ]
         },
         {
