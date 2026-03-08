@@ -1,5 +1,5 @@
 {
-    "name": "Nator v11",
+    "name": "Nator v12",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -47,7 +47,9 @@
                 "obf",
                 "obc",
                 "dre",
-                "7pa"
+                "7pa",
+                "utc",
+                "umg"
             ]
         },
         {
@@ -77,7 +79,12 @@
                 "9ws",
                 "oba",
                 "baa",
-                "nea"
+                "nea",
+                "9fc",
+                "8cs",
+                "xlm",
+                "xsk",
+                "zlb"
             ]
         },
         {
@@ -94,7 +101,9 @@
             "equipmentItemCode": [
                 "tgl",
                 "mgl",
-                "tbl"
+                "tbl",
+                "dgr",
+                "vbl"
             ]
         },
         {
@@ -133,7 +142,8 @@
                 "xmb",
                 "xmg",
                 "zhb",
-                "zmb"
+                "zmb",
+                "ztb"
             ]
         },
         {
@@ -191,7 +201,10 @@
                 "7s8",
                 "7wc",
                 "7pa",
-                "7gm"
+                "7gm",
+                "7gi",
+                "7h7",
+                "uh9"
             ]
         },
         {
