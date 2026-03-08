@@ -1,5 +1,5 @@
 {
-    "name": "Nator v14",
+    "name": "Nator v15",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -160,6 +160,22 @@
                 "zhb",
                 "zmb",
                 "ztb"
+            ]
+        },
+        {
+            "name": "Sorc Stuff",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique",
+                "set"
+            ],
+            "equipmentItemCode": [
+                "9dg",
+                "ztb",
+                "oba",
+                "xsk"
             ]
         },
         {
