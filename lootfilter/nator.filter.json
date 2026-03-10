@@ -1,5 +1,5 @@
 {
-    "name": "Nator v15",
+    "name": "Nator v16",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -189,6 +189,18 @@
             ],
             "equipmentCategory": [
                 "warlo"
+            ]
+        },
+        {
+            "name": "BiS Rares",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "rare"
+            ],
+            "equipmentItemCode": [
+                "ci3"
             ]
         },
         {
