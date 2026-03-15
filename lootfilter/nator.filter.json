@@ -1,5 +1,5 @@
 {
-    "name": "Nator v16",
+    "name": "Nator v17",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -118,7 +118,7 @@
                 "mgl",
                 "tbl",
                 "dgr",
-                "vbl",
+                "tbl",
                 "lgl"
             ]
         },
@@ -158,24 +158,92 @@
                 "xmb",
                 "xmg",
                 "zhb",
-                "zmb",
-                "ztb"
+                "zmb"
             ]
         },
         {
-            "name": "Sorc Stuff",
+            "name": "Sorc Unique",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
-                "unique",
-                "set"
+                "unique"
             ],
             "equipmentItemCode": [
                 "9dg",
                 "ztb",
                 "oba",
-                "xsk"
+                "obf",
+                "uit",
+                "dgr",
+                "9fc",
+                "uhm",
+                "uap",
+                "urn",
+                "uui",
+                "xpl",
+                "xea",
+                "lgl",
+                "mgl",
+                "ulc",
+                "tbl",
+                "umc",
+                "xtb",
+                "uvb",
+                "xvb",
+                "usk",
+                "upl",
+                "xrs",
+                "xh9",
+                "xrn",
+                "xlm",
+                "xkp",
+                "fld"
+            ]
+        },
+        {
+            "name": "Sorc Set",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "oba",
+                "xsk",
+                "uth",
+                "xmb",
+                "zmb",
+                "zhb",
+                "xtb"
+            ]
+        },
+        {
+            "name": "Sorc Bases Elite",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "uit",
+                "6ws",
+                "7wc"
+            ]
+        },
+        {
+            "name": "Sorc Bases Normal",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "crs",
+                "bst"
             ]
         },
         {
@@ -222,9 +290,6 @@
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "magic"
-            ],
             "equipmentCategory": [
                 "charm"
             ]
