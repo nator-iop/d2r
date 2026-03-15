@@ -1,5 +1,5 @@
 {
-    "name": "Nator v17",
+    "name": "Nator v18",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -283,15 +283,6 @@
             ]
         },
         {
-            "name": "Charms",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentCategory": [
-                "charm"
-            ]
-        },
-        {
             "name": "BiS Bases Elite",
             "enabled": true,
             "ruleType": "show",
@@ -454,7 +445,7 @@
         },
         {
             "name": "Magic Jewels",
-            "enabled": true,
+            "enabled": false,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
@@ -466,7 +457,7 @@
         },
         {
             "name": "Magic Rings",
-            "enabled": true,
+            "enabled": false,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
