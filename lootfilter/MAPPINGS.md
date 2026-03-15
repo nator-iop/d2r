@@ -20,6 +20,13 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `ci3` | Diadem | elite | | |
 | `ci2` | Tiara | elite | | |
 
+## Class Helms
+
+| Code | Base Item | Quality | Unique | Set |
+|------|-----------|---------|--------|-----|
+| `dre` | Sky Spirit | elite | Ravenlore | |
+| `baa` | Slayer Guard | exceptional | Arreat's Face | |
+
 ## Armors
 
 | Code | Base Item | Quality | Unique | Set |
@@ -52,6 +59,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
+| `ulg` | Bramble Mitts | elite | | Laying of Hands |
 | `uvg` | Vambraces | elite | | |
 | `lgl` | Light Gauntlets | normal | Magefist | |
 | `mgl` | Chain Gloves | normal | Chance Guards | |
@@ -76,7 +84,8 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `ulc` | Spiderweb Sash | elite | Arachnid Mesh | |
 | `umc` | Mithril Coil | elite | Verdungo's Hearty Cord | |
 | `uvc` | Vampirefang Belt | elite | Nosferatu's Coil | |
-| `ztb` | Troll Belt | elite | Snowclash | Trang-Oul's Girth |
+| `utc` | Troll Belt | elite | (none) | Trang-Oul's Girth |
+| `ztb` | Battle Belt | exceptional | Snowclash | Wilhelm's Pride |
 | `zmb` | Mesh Belt | exceptional | | Tal Rasha's Fine-Spun Cloth |
 | `zhb` | War Belt | exceptional | | IK's Detail |
 | `zvb` | Sharkskin Belt | exceptional | | |
@@ -89,7 +98,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `7cr` | Phase Blade | elite | | |
-| `7gd` | Champion Sword | elite | The Grandfather | |
+| `7gd` | Colossus Blade | elite | The Grandfather | |
 | `9cr` | Dimensional Blade | exceptional | | |
 | `crs` | Crystal Sword | normal | | |
 
@@ -123,58 +132,64 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `7sr` | ? | elite | | |
+| `7sr` | Hyperion Spear | elite | Arioc's Needle | |
 
 ## Weapons — Staves
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `6ws` | Archon Staff | elite | Mang Song's Lesson | |
-| `6cs` | ? | elite | | |
-| `8cs` | ? | exceptional | Naj's Puzzler | |
+| `6cs` | Elder Staff | elite | Ondal's Wisdom | Naj's Puzzler |
+| `8cs` | Cedar Staff | exceptional | Chromatic Ire | |
 | `8bs` | Gothic Staff | exceptional | | |
 | `bst` | Battle Staff | normal | | |
 
-## Weapons — Wands/Scepters
+## Weapons — Scepters
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `7ws` | Caduceus | elite | | |
-| `9ws` | ? | exceptional | | |
-| `9fc` | ? | exceptional | Blade of Ali Baba | |
+| `9ws` | Divine Sceptre | exceptional | Hand of Blessed Light | |
 
-## Weapons — Bows/Crossbows
+## Weapons — Swords (Exceptional)
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `6lw` | ? | elite | | |
-| `7b8` | ? | elite | | |
-| `7bk` | ? | elite | | |
+| `9fc` | Tulwar | exceptional | Blade of Ali Baba | |
+
+## Weapons — Bows
+
+| Code | Base Item | Quality | Unique | Set |
+|------|-----------|---------|--------|-----|
+| `6lw` | Hydra Bow | elite | Windforce | |
+
+## Weapons — Throwing
+
+| Code | Base Item | Quality | Unique | Set |
+|------|-----------|---------|--------|-----|
+| `7b8` | Winged Axe | elite | Lacerator | |
+| `7bk` | Winged Knife | elite | Warshrike | |
 
 ## Weapons — Sorc Orbs
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `obf` | Dimensional Shard | elite | Death's Fathom | |
-| `obc` | ? | elite | | |
+| `obc` | Eldritch Orb | elite | Eschuta's Temper | |
 | `oba` | Swirling Crystal | exceptional | The Oculus | Tal Rasha's Lidless Eye |
 
-## Weapons — Other
+## Weapons — Amazon
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `amf` | ? | elite | | |
-| `dre` | ? | elite | | |
-| `baa` | ? | exceptional | | |
-| `nea` | ? | exceptional | | |
-| `ama` | ? | exceptional | | |
+| `amf` | Matriarchal Javelin | elite | Thunderstroke | |
+| `ama` | Ceremonial Javelin | exceptional | Titan's Revenge | |
 
-## Set Elite (misc)
+## Weapons — Necromancer
 
-| Code | Base Item | Quality | Set |
-|------|-----------|---------|-----|
-| `ulg` | ? | elite | |
-| `utc` | ? | elite | Gheed's Fortune (unique, also in BiS Unique Elite) |
+| Code | Base Item | Quality | Unique | Set |
+|------|-----------|---------|--------|-----|
+| `nea` | Hierophant Trophy | exceptional | Homunculus | |
 
 ## Runeword Bases
 
