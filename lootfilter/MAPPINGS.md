@@ -10,15 +10,15 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `urn` | Corona | elite | Crown of Ages | |
 | `uhm` | Spired Helm | elite | Nightwing's Veil | |
 | `usk` | Demonhead | elite | Andariel's Visage | |
-| `uh9` | Bone Visage | elite | | |
-| `xhm` | Winged Helm | exceptional | | |
+| `uh9` | Bone Visage | elite | Giant Skull | Trang-Oul's Guise |
+| `xhm` | Winged Helm | exceptional | Guillaume's Face | |
 | `xh9` | Grim Helm | exceptional | Vampire Gaze | |
 | `xlm` | Casque | exceptional | Stealskull | |
 | `xsk` | Death Mask | exceptional | | Tal Rasha's Horadric Crest |
 | `xrn` | Grand Crown | exceptional | Crown of Thieves | |
 | `xkp` | Sallet | exceptional | Rockstopper | |
-| `ci3` | Diadem | elite | | |
-| `ci2` | Tiara | elite | | |
+| `ci3` | Diadem | elite | Griffon's Eye | |
+| `ci2` | Tiara | elite | Kira's Guardian | |
 
 ## Class Helms
 
@@ -32,13 +32,13 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `uui` | Dusk Shroud | elite | Ormus' Robes | |
-| `upl` | Balrog Skin | elite | Gladiator's Bane | |
+| `upl` | Balrog Skin | elite | Gladiator's Bane, Arkaine's Valor | |
 | `uth` | Lacquered Plate | elite | | Tal Rasha's Guardianship |
-| `uhb` | Hellforge Plate | elite | | |
-| `uar` | Sacred Armor | elite | | |
+| `uar` | Sacred Armor | elite | Tyrael's Might | |
 | `xea` | Serpentskin Armor | exceptional | Skin of the Vipermagi | |
 | `xpl` | Russet Armor | exceptional | Skullder's Ire | |
 | `xrs` | Cuirass | exceptional | Duriel's Shell | |
+| `xhn` | Mesh Armor | exceptional | Shaftstop | |
 | `fld` | Field Plate | normal | Rockfleece | |
 
 ## Shields
@@ -53,26 +53,27 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 |------|-----------|---------|--------|-----|
 | `pab` | Sacred Targe | elite | | |
 | `paf` | Vortex Shield | elite | | |
-| `pa9` | Gilded Shield | exceptional | | |
+| `pa9` | Gilded Shield | exceptional | Herald of Zakarum | |
 
 ## Gloves
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `ulg` | Bramble Mitts | elite | | Laying of Hands |
-| `uvg` | Vambraces | elite | | |
-| `lgl` | Light Gauntlets | normal | Magefist | |
+| `uvg` | Vampirebone Gloves | elite | Dracul's Grasp | |
+| `umg` | Vambraces | elite | Soul Drainer | |
+| `lgl` | Leather Gloves | normal | Magefist | |
 | `mgl` | Chain Gloves | normal | Chance Guards | |
-| `tgl` | Heavy Gloves | normal | | |
-| `xmb` | Heavy Bracers | exceptional | | Trang-Oul's Claws |
-| `xhb` | War Gauntlets | exceptional | | |
-| `xmg` | Gauntlets | exceptional | | |
+| `tgl` | Light Gauntlets | normal | | |
+| `xmg` | Heavy Bracers | exceptional | | Trang-Oul's Claws |
+| `xhb` | War Boots | exceptional | Gore Rider | |
 
 ## Boots
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
 | `uvb` | Scarabshell Boots | elite | Sandstorm Trek | |
+| `uhb` | Myrmidon Greaves | elite | Shadow Dancer | |
 | `utb` | Mirrored Boots | elite | Wraithstep | |
 | `xtb` | Battle Boots | exceptional | War Traveler | Aldur's Advance |
 | `xvb` | Sharkskin Boots | exceptional | Waterwalk | |
@@ -84,20 +85,18 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `ulc` | Spiderweb Sash | elite | Arachnid Mesh | |
 | `umc` | Mithril Coil | elite | Verdungo's Hearty Cord | |
 | `uvc` | Vampirefang Belt | elite | Nosferatu's Coil | |
-| `utc` | Troll Belt | elite | (none) | Trang-Oul's Girth |
 | `ztb` | Battle Belt | exceptional | Snowclash | Wilhelm's Pride |
 | `zmb` | Mesh Belt | exceptional | | Tal Rasha's Fine-Spun Cloth |
 | `zhb` | War Belt | exceptional | | IK's Detail |
 | `zvb` | Sharkskin Belt | exceptional | | |
 | `zlb` | Demonhide Sash | exceptional | String of Ears | |
 | `tbl` | Heavy Belt | normal | Goldwrap | |
-| `vbl` | Light Belt | normal | | |
 
 ## Weapons — Swords
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `7cr` | Phase Blade | elite | | |
+| `7cr` | Phase Blade | elite | Lightsabre, Azurewrath | |
 | `7gd` | Colossus Blade | elite | The Grandfather | |
 | `9cr` | Dimensional Blade | exceptional | | |
 | `crs` | Crystal Sword | normal | | |
@@ -106,27 +105,33 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `7dg` | Fanged Knife | elite | | |
-| `9dg` | Bone Knife | exceptional | Wizardspike | |
+| `7dg` | Bone Knife | elite | Wizardspike | |
+| `9dg` | Poignard | exceptional | Spineripper | |
 | `dgr` | Dagger | normal | Gull | |
+
+## Weapons — Wands
+
+| Code | Base Item | Quality | Unique | Set |
+|------|-----------|---------|--------|-----|
+| `7gw` | Unearthed Wand | elite | Death's Web | |
 
 ## Weapons — Axes/Maces/Hammers
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `7gw` | Berserker Axe | elite | | |
-| `7gi` | Glorious Axe | elite | | |
+| `7gi` | Glorious Axe | elite | Executioner's Justice | |
 | `7gm` | Thunder Maul | elite | Earth Shifter | |
-| `7fl` | Scourge | elite | | |
+| `7fl` | Scourge | elite | Stormlash | |
 
 ## Weapons — Polearms
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `7wc` | Giant Thresher | elite | | |
-| `7pa` | Great Poleaxe | elite | | |
+| `7wc` | Giant Thresher | elite | Stormspire | |
+| `7pa` | Cryptic Axe | elite | Tomb Reaver | |
 | `7h7` | Great Poleaxe | elite | | |
-| `7s8` | Colossus Voulge | elite | | |
+| `7s8` | Thresher | elite | Reaper's Toll | |
+| `7vo` | Colossus Voulge | elite | | |
 
 ## Weapons — Spears
 
@@ -148,7 +153,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
-| `7ws` | Caduceus | elite | | |
+| `7ws` | Caduceus | elite | Astreon's Iron Ward | |
 | `9ws` | Divine Sceptre | exceptional | Hand of Blessed Light | |
 
 ## Weapons — Swords (Exceptional)
@@ -200,5 +205,8 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `6ws` | Archon Staff | Obsession |
 | `bst` | Battle Staff | Memory |
 | `7wc` | Giant Thresher | Infinity / Insight |
+| `7s8` | Thresher | Infinity / Insight |
+| `7pa` | Cryptic Axe | Infinity / Insight |
+| `7vo` | Colossus Voulge | Infinity / Insight |
 | `utp` | Archon Plate | various |
 | `7cr` | Phase Blade | various |

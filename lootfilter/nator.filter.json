@@ -1,5 +1,5 @@
 {
-    "name": "Nator v18",
+    "name": "Nator v19",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -35,7 +35,6 @@
                 "6ws",
                 "7dg",
                 "7sr",
-                "7s8",
                 "amf",
                 "upl",
                 "uui",
@@ -47,12 +46,11 @@
                 "obf",
                 "obc",
                 "dre",
-                "7pa",
                 "umg"
             ]
         },
         {
-            "name": "Eth Unique Elite",
+            "name": "Eth Unique Merc",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
@@ -60,10 +58,14 @@
                 "unique"
             ],
             "equipmentQuality": [
-                "elite"
+                "elite",
+                "exceptional"
             ],
             "equipmentItemCode": [
-                "7gm"
+                "7gm",
+                "7s8",
+                "7pa",
+                "xhn"
             ]
         },
         {
@@ -152,7 +154,6 @@
             "equipmentItemCode": [
                 "xhm",
                 "xtb",
-                "xmb",
                 "xmg",
                 "zhb",
                 "zmb"
@@ -167,7 +168,6 @@
                 "unique"
             ],
             "equipmentItemCode": [
-                "9dg",
                 "ztb",
                 "oba",
                 "obf",
@@ -210,7 +210,7 @@
                 "oba",
                 "xsk",
                 "uth",
-                "xmb",
+                "xmg",
                 "zmb",
                 "zhb",
                 "xtb"
@@ -301,6 +301,7 @@
                 "7gm",
                 "7gi",
                 "7h7",
+                "7vo",
                 "uh9"
             ]
         },
