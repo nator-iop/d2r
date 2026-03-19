@@ -1,5 +1,5 @@
 {
-    "name": "Nator v20",
+    "name": "Nator v21",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -265,6 +265,18 @@
             ],
             "equipmentItemCode": [
                 "ci3"
+            ]
+        },
+        {
+            "name": "Rare Grimoires",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "rare"
+            ],
+            "equipmentCategory": [
+                "warlo"
             ]
         },
         {
