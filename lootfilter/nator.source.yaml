@@ -276,12 +276,6 @@ other_rules:
     filterEtherealSocketed: false
     itemCode: [hp2, hp3, hp4, hp5, mp2, mp3, mp4, mp5, rvs, wms, yps, vps]
 
-  - name: All rejuvs
-    enabled: false
-    ruleType: show
-    filterEtherealSocketed: false
-    itemCode: [rvs]
-
   - name: Magic Jewels
     enabled: false
     ruleType: show

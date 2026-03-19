@@ -439,15 +439,6 @@
             ]
         },
         {
-            "name": "All rejuvs",
-            "enabled": false,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "itemCode": [
-                "rvs"
-            ]
-        },
-        {
             "name": "Magic Jewels",
             "enabled": false,
             "ruleType": "show",
