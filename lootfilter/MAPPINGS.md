@@ -1,5 +1,8 @@
 # Item Code Mappings
 
+> **Note:** The source of truth is now `nator.source.yaml` which uses item names directly.
+> This file is kept as a reference for looking up base item codes.
+
 Item codes used in nator.filter.json mapped to base items and the unique/set items they target.
 
 ## Helms

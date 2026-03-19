@@ -27,11 +27,11 @@
 
 - Source of truth: `lootfilter/nator.source.yaml` (human-readable item names)
 - Generated output: `lootfilter/nator.filter.json` (do not edit directly)
-- Build: `python3 lootfilter/build.py` (resolves names → codes, generates JSON)
-- Bump version in `nator.source.yaml` `name` field on each commit
+- Build: `python3 lootfilter/build.py` (resolves names → codes, generates JSON, auto-bumps version)
 - Targets builds: Warlock, Sorc, Hammerdin, Javazon, Frenzy (plus merc gear and ultra-rare drops)
-- Rule structure: Unicorn Drops → Common (Unique/Set/Bases) → Per-build (Unique/Set/Bases) → Merc → Other
+- YAML organizes items per-build; build script merges into 3 rules: Unique, Set, Bases
 - Warlock items use `equipmentCategory: ["warlo"]` (category-based, not item codes)
+- Rule order: Unicorn Drops → Unique/Set/Bases → Merc → Warlock → Accessories → Set Amulets → Rare Diadems → disabled rules → Hide All
 - Toggleable disabled rules for farming, pre-BiS gear, and leveling bases
 - Data files (Armor.txt, Weapons.txt, UniqueItems.txt, SetItems.txt) are local for code lookups
 - Overrides in YAML handle D2R items and 1.13 data file typos/old names
@@ -39,7 +39,7 @@
 
 ## Reviewed and kept (not BiS but intentionally included)
 
-- `uvc` (Nosferatu's Coil) — good melee belt, kept by choice
-- `7gd` (The Grandfather) — iconic drop, kept by choice
-- `6ws` (Mang Song's Lesson) — rare caster staff, kept by choice
-- `utb` (Mirrored Boots / Wraithstep) — D2R-added unique, kept
+- Nosferatu's Coil — good melee belt, kept by choice
+- The Grandfather — iconic drop, in Unicorn Drops
+- Mang Song's Lesson — rare caster staff, in Unicorn Drops
+- Wraithstep — D2R-added unique, kept
