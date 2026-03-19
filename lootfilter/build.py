@@ -110,31 +110,26 @@ def build(source):
             codes = r.resolve_list(items, "unicorn")
             rules.append(make_rule("Unicorn Drops", codes, rarity=["unique"]))
 
-    # Common
-    if c := source.get("common", {}):
-        if items := c.get("unique"):
-            codes = r.resolve_list(items, "common.unique")
-            rules.append(make_rule("Common Unique", codes, rarity=["unique"]))
-        if items := c.get("set"):
-            codes = r.resolve_list(items, "common.set")
-            rules.append(make_rule("Common Set", codes, rarity=["set"]))
-        if items := c.get("bases"):
-            codes = r.resolve_list(items, "common.bases")
-            rules.append(make_rule("Common Bases", codes, eth=True))
+    # Merge common + all builds into 3 rules (YAML keeps per-build for readability)
+    all_unique = list(source.get("common", {}).get("unique", []))
+    all_set = list(source.get("common", {}).get("set", []))
+    all_bases = list(source.get("common", {}).get("bases", []))
 
-    # Per-build rules
     for bname in source.get("build_order", []):
         build_cfg = source.get("builds", {}).get(bname, {})
-        label = bname.title()
-        if items := build_cfg.get("unique"):
-            codes = r.resolve_list(items, f"{bname}.unique")
-            rules.append(make_rule(f"{label} Unique", codes, rarity=["unique"]))
-        if items := build_cfg.get("set"):
-            codes = r.resolve_list(items, f"{bname}.set")
-            rules.append(make_rule(f"{label} Set", codes, rarity=["set"]))
-        if items := build_cfg.get("bases"):
-            codes = r.resolve_list(items, f"{bname}.bases")
-            rules.append(make_rule(f"{label} Bases", codes, eth=True))
+        all_unique.extend(build_cfg.get("unique", []))
+        all_set.extend(build_cfg.get("set", []))
+        all_bases.extend(build_cfg.get("bases", []))
+
+    if all_unique:
+        codes = r.resolve_list(all_unique, "unique")
+        rules.append(make_rule("BiS Unique", codes, rarity=["unique"]))
+    if all_set:
+        codes = r.resolve_list(all_set, "set")
+        rules.append(make_rule("BiS Set", codes, rarity=["set"]))
+    if all_bases:
+        codes = r.resolve_list(all_bases, "bases")
+        rules.append(make_rule("BiS Bases", codes, eth=True))
 
     # Merc (eth uniques)
     if m := source.get("merc", {}):

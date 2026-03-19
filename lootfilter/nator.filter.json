@@ -20,7 +20,7 @@
             ]
         },
         {
-            "name": "Common Unique",
+            "name": "BiS Unique",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -69,11 +69,27 @@
                 "zhb",
                 "tbl",
                 "dgr",
-                "8cs"
+                "8cs",
+                "uhm",
+                "uui",
+                "oba",
+                "obc",
+                "ztb",
+                "7ws",
+                "pa9",
+                "9ws",
+                "amf",
+                "ama",
+                "7b8",
+                "7bk",
+                "zvb",
+                "baa",
+                "tbt",
+                "xlt"
             ]
         },
         {
-            "name": "Common Set",
+            "name": "BiS Set",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -84,11 +100,21 @@
                 "xhm",
                 "xtb",
                 "xmg",
-                "ulg"
+                "ulg",
+                "oba",
+                "xsk",
+                "uth",
+                "zmb",
+                "paf",
+                "7ws",
+                "ba5",
+                "xhb",
+                "zhb",
+                "utc"
             ]
         },
         {
-            "name": "Common Bases",
+            "name": "BiS Bases",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
@@ -104,137 +130,10 @@
                 "7h7",
                 "7gm",
                 "7gi",
-                "uh9"
-            ]
-        },
-        {
-            "name": "Sorc Unique",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentItemCode": [
-                "uhm",
-                "uui",
-                "oba",
-                "obc",
-                "ztb"
-            ]
-        },
-        {
-            "name": "Sorc Set",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentItemCode": [
-                "oba",
-                "xsk",
-                "uth",
-                "zmb"
-            ]
-        },
-        {
-            "name": "Sorc Bases",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentItemCode": [
+                "uh9",
                 "6ws",
-                "bst"
-            ]
-        },
-        {
-            "name": "Hammerdin Unique",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentItemCode": [
-                "7ws",
-                "pa9",
-                "9ws"
-            ]
-        },
-        {
-            "name": "Hammerdin Set",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentItemCode": [
-                "paf",
-                "7ws"
-            ]
-        },
-        {
-            "name": "Hammerdin Bases",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentItemCode": [
-                "pab"
-            ]
-        },
-        {
-            "name": "Javazon Unique",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentItemCode": [
-                "amf",
-                "ama",
-                "7b8",
-                "7bk",
-                "zvb"
-            ]
-        },
-        {
-            "name": "Frenzy Unique",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentItemCode": [
-                "baa",
-                "tbt",
-                "xlt"
-            ]
-        },
-        {
-            "name": "Frenzy Set",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentItemCode": [
-                "ba5",
-                "xhb",
-                "zhb",
-                "utc"
-            ]
-        },
-        {
-            "name": "Frenzy Bases",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentItemCode": [
+                "bst",
+                "pab",
                 "7wa",
                 "7gs"
             ]
