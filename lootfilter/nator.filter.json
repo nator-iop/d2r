@@ -20,7 +20,7 @@
             ]
         },
         {
-            "name": "BiS Unique",
+            "name": "Unique",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -89,7 +89,7 @@
             ]
         },
         {
-            "name": "BiS Set",
+            "name": "Set",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -114,7 +114,7 @@
             ]
         },
         {
-            "name": "BiS Bases",
+            "name": "Bases",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,

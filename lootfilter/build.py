@@ -123,13 +123,13 @@ def build(source):
 
     if all_unique:
         codes = r.resolve_list(all_unique, "unique")
-        rules.append(make_rule("BiS Unique", codes, rarity=["unique"]))
+        rules.append(make_rule("Unique", codes, rarity=["unique"]))
     if all_set:
         codes = r.resolve_list(all_set, "set")
-        rules.append(make_rule("BiS Set", codes, rarity=["set"]))
+        rules.append(make_rule("Set", codes, rarity=["set"]))
     if all_bases:
         codes = r.resolve_list(all_bases, "bases")
-        rules.append(make_rule("BiS Bases", codes, eth=True))
+        rules.append(make_rule("Bases", codes, eth=True))
 
     # Merc (eth uniques)
     if m := source.get("merc", {}):
