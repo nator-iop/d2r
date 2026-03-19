@@ -188,18 +188,11 @@ merc:
 
 other_rules:
   # Warlock (all set/unique by category, not item codes)
-  - name: BiS Warlock
+  - name: Warlock Class Items
     enabled: true
     ruleType: show
     filterEtherealSocketed: false
-    equipmentRarity: [set, unique]
-    equipmentCategory: [warlo]
-
-  - name: Rare Grimoires
-    enabled: true
-    ruleType: show
-    filterEtherealSocketed: false
-    equipmentRarity: [rare]
+    equipmentRarity: [rare, set, unique]
     equipmentCategory: [warlo]
 
   # Rare diadems (Griffon's-tier affixes)

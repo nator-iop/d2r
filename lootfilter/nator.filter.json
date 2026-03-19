@@ -158,25 +158,14 @@
             ]
         },
         {
-            "name": "BiS Warlock",
+            "name": "Warlock Class Items",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
+                "rare",
                 "set",
                 "unique"
-            ],
-            "equipmentCategory": [
-                "warlo"
-            ]
-        },
-        {
-            "name": "Rare Grimoires",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "rare"
             ],
             "equipmentCategory": [
                 "warlo"
