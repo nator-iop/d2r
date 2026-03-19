@@ -1,50 +1,56 @@
 # D2R Loot Filters
 
-Loot filter for Diablo 2 Resurrected, targeting three builds: **Warlock** (Echoing Strike), **Hammerdin** (Blessed Hammer), and **Javazon** (Lightning Fury).
+Loot filter for Diablo 2 Resurrected, targeting five builds: **Warlock** (Echoing Strike), **Sorc**, **Hammerdin** (Blessed Hammer), **Javazon** (Lightning Fury), and **Frenzy Barb**.
+
+## How it works
+
+The filter is maintained as a human-readable YAML file (`lootfilter/nator.source.yaml`) with item names organized by build. A build script resolves names to game codes and generates the filter JSON.
+
+```
+Edit nator.source.yaml → Run python3 lootfilter/build.py → Import nator.filter.json
+```
+
+The build script auto-increments the version number on each run.
 
 ## What's always on
 
-- Best-in-slot unique and set items for the three builds
-- Valuable/grail unique and set items you never want to miss (Tyrael's Might, Death's Fathom, Griffon's Eye, etc.)
-- Merc gear (Andariel's Visage, Reaper's Toll, Guillaume's Face, etc.)
-- Elite runeword bases (Monarch, Archon Plate, Thresher, Thunder Maul, etc.)
-- Warlock class-specific unique/set items
-- Rare+ rings, amulets, and jewels
-- Magic charms
+| Rule | What it shows |
+|------|---------------|
+| Unicorn Drops | Ultra-rare uniques you never want to miss (Tyrael's Might, Griffon's Eye, Windforce, etc.) |
+| Unique | Valuable/build uniques across all five builds |
+| Set | Valuable/build set items (Tal Rasha, Guillaume's, IK, Griswold's, etc.) |
+| Bases | Elite runeword bases (Monarch, Archon Plate, Phase Blade, Thresher, etc.) |
+| Merc Eth Unique | Ethereal merc weapons/armor (Reaper's Toll, Shaftstop, etc.) |
+| Warlock Class Items | All rare/set/unique Warlock class items |
+| Accessories | Rare/unique rings, amulets, and jewels |
+| Set Amulets | Set amulets |
+| Rare Diadems | Rare diadems (for GG affixes) |
 
 Everything else is hidden.
 
-## Toggleable rules
+## Toggleable rules (disabled by default)
 
-Turn these on/off in-game depending on what you need:
-
-| Rule | Default | What it shows |
-|------|---------|---------------|
-| Farm Uni/Set Elite | off | ALL elite unique/set items (for trading/identifying) |
-| Farm Bases Elite | off | ALL elite socketed items (broad runeword base search) |
-| Pre-BiS Unique Normal | off | Budget uniques: Bloodfist, Goblin Toe, Gull, Tarnhelm, Nightsmoke, Spectral Shard |
-| Pre-BiS Unique Except | off | Budget exceptionals: Rockstopper, Peasant Crown, Moser's, Duriel's Shell, Blade of Ali Baba, Suicide Branch |
-| Pre-BiS Bases Except | off | Socketed exceptional bases for merc/mid-game runewords: Death Mask, Grim Helm, Serpentskin, Cuirass, Mage Plate |
-| Lvl Bases Normal | off | Early runeword bases: Crystal Sword, Broad Sword, shields, polearms (Spirit, Insight, Ancients' Pledge) |
-| Lvl Bases Exceptional | off | Better polearm bases for Insight: Bill, Battle Scythe, Partizan, Bec-de-Corbin, Grim Scythe |
-
-Turn the Lvl and Pre-BiS rules on at the start of a new season, then toggle them off as you gear up.
+| Rule | What it shows |
+|------|---------------|
+| Farm Uni/Set Elite | ALL elite unique/set items (for trading/identifying) |
+| Farm Bases Elite | ALL elite socketed items (broad runeword base search) |
+| Farm Magic Jewels | Magic jewels (for facets) |
+| Farm Magic Rings | Magic rings |
+| Farm Potions | All potions except minor |
+| Pre-BiS Unique Normal | Budget normal uniques |
+| Pre-BiS Unique Except | Budget exceptional uniques |
+| Pre-BiS Bases Normal | Normal runeword bases (Flail for HotO) |
+| Pre-BiS Bases Except | Exceptional runeword bases |
+| Lvl Bases Normal | Early bases (Crystal Sword, shields, polearms) |
+| Lvl Bases Exceptional | Better polearm bases for Insight |
 
 ## How to import
 
-1. Open the filter file on GitHub and click the "Raw" button
+1. Open `lootfilter/nator.filter.json` on GitHub and click "Raw"
 2. Select all and copy to clipboard
 3. In D2R, go to Options > Loot Filter > Import from Clipboard
 
-## Rule naming convention
+## Limits
 
-Rules are prefixed by category:
-- **BiS** — endgame best-in-slot gear (always on)
-- **Farm** — broad farming rules (toggle on for loot runs)
-- **Pre-BiS** — budget/mid-game gear (toggle on when needed)
-- **Lvl** — leveling bases (toggle on for new season)
-- No prefix — general rules (Accessories, Charms, Hide All)
-
-## Filter name character limit
-
-D2R has a ~15 character limit on the filter name field. Keep it short.
+- **32 rules max** — game silently truncates beyond this
+- **~15 char filter name** — keep the name field short
