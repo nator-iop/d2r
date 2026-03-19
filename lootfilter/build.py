@@ -1,0 +1,183 @@
+#!/usr/bin/env python3
+"""Build nator.filter.json from nator.source.yaml
+
+Usage: python3 lootfilter/build.py
+"""
+
+import json
+import sys
+from pathlib import Path
+
+try:
+    import yaml
+except ImportError:
+    print("PyYAML required: pip install pyyaml")
+    sys.exit(1)
+
+DIR = Path(__file__).parent
+
+
+def normalize(s):
+    """Normalize name for fuzzy matching: lowercase, strip spaces/punctuation."""
+    return s.lower().replace(" ", "").replace("'", "").replace("-", "")
+
+
+def load_tsv(filename, key_col, val_col):
+    """Load a TSV data file as {col[key]: col[val]}."""
+    result = {}
+    with open(DIR / filename, encoding="latin-1") as f:
+        header = f.readline().strip().split("\t")
+        ki = header.index(key_col)
+        vi = header.index(val_col)
+        for line in f:
+            cols = line.split("\t")
+            if len(cols) > max(ki, vi):
+                k, v = cols[ki].strip(), cols[vi].strip()
+                if k and v:
+                    result[k] = v
+    return result
+
+
+class Resolver:
+    def __init__(self, overrides):
+        self.overrides = overrides or {}
+        self.bases = {
+            **load_tsv("Armor.txt", "name", "code"),
+            **load_tsv("Weapons.txt", "name", "code"),
+        }
+        self.uniques = load_tsv("UniqueItems.txt", "index", "code")
+        self.sets = load_tsv("SetItems.txt", "index", "item")
+        self.errors = []
+
+    def resolve(self, name, context=""):
+        """Resolve item name to 3-letter code."""
+        # Overrides first (handles D2R items, typos, renamed items)
+        if name in self.overrides:
+            return self.overrides[name]
+
+        norm = normalize(name)
+        for table in [self.uniques, self.sets, self.bases]:
+            # Exact match
+            if name in table:
+                return table[name]
+            # Normalized match (handles spacing/case differences)
+            for key, code in table.items():
+                if normalize(key) == norm:
+                    return code
+
+        self.errors.append(f"  '{name}' ({context})")
+        return None
+
+    def resolve_list(self, names, context=""):
+        """Resolve list of names to deduped codes, preserving order."""
+        codes = []
+        seen = set()
+        for name in names or []:
+            code = self.resolve(name, context)
+            if code and code not in seen:
+                codes.append(code)
+                seen.add(code)
+        return codes
+
+
+def make_rule(name, codes, *, enabled=True, rarity=None, eth=False,
+              quality=None, categories=None):
+    """Create a show rule."""
+    rule = {
+        "name": name,
+        "enabled": enabled,
+        "ruleType": "show",
+        "filterEtherealSocketed": eth,
+    }
+    if rarity:
+        rule["equipmentRarity"] = rarity
+    if quality:
+        rule["equipmentQuality"] = quality
+    if categories:
+        rule["equipmentCategory"] = categories
+    if codes:
+        rule["equipmentItemCode"] = codes
+    return rule
+
+
+def build(source):
+    r = Resolver(source.get("overrides"))
+    rules = []
+
+    # Unicorn drops
+    if u := source.get("unicorn", {}):
+        if items := u.get("unique"):
+            codes = r.resolve_list(items, "unicorn")
+            rules.append(make_rule("Unicorn Drops", codes, rarity=["unique"]))
+
+    # Common
+    if c := source.get("common", {}):
+        if items := c.get("unique"):
+            codes = r.resolve_list(items, "common.unique")
+            rules.append(make_rule("Common Unique", codes, rarity=["unique"]))
+        if items := c.get("set"):
+            codes = r.resolve_list(items, "common.set")
+            rules.append(make_rule("Common Set", codes, rarity=["set"]))
+        if items := c.get("bases"):
+            codes = r.resolve_list(items, "common.bases")
+            rules.append(make_rule("Common Bases", codes, eth=True))
+
+    # Per-build rules
+    for bname in source.get("build_order", []):
+        build_cfg = source.get("builds", {}).get(bname, {})
+        label = bname.title()
+        if items := build_cfg.get("unique"):
+            codes = r.resolve_list(items, f"{bname}.unique")
+            rules.append(make_rule(f"{label} Unique", codes, rarity=["unique"]))
+        if items := build_cfg.get("set"):
+            codes = r.resolve_list(items, f"{bname}.set")
+            rules.append(make_rule(f"{label} Set", codes, rarity=["set"]))
+        if items := build_cfg.get("bases"):
+            codes = r.resolve_list(items, f"{bname}.bases")
+            rules.append(make_rule(f"{label} Bases", codes, eth=True))
+
+    # Merc (eth uniques)
+    if m := source.get("merc", {}):
+        if items := m.get("unique"):
+            codes = r.resolve_list(items, "merc.unique")
+            rules.append(make_rule("Merc Eth Unique", codes,
+                                   rarity=["unique"], eth=True,
+                                   quality=["elite", "exceptional"]))
+
+    # Other rules (passthrough, with optional name resolution)
+    for rule in source.get("other_rules", []):
+        rule = dict(rule)
+        if "items" in rule:
+            names = rule.pop("items")
+            codes = r.resolve_list(names, rule.get("name", "other"))
+            rule["equipmentItemCode"] = codes
+        rules.append(rule)
+
+    if r.errors:
+        print("Failed to resolve:")
+        for e in r.errors:
+            print(e)
+        sys.exit(1)
+
+    return {"name": source["name"], "rules": rules}
+
+
+def main():
+    src = DIR / "nator.source.yaml"
+    with open(src) as f:
+        source = yaml.safe_load(f)
+
+    result = build(source)
+
+    out = DIR / "nator.filter.json"
+    with open(out, "w") as f:
+        json.dump(result, f, indent=4)
+        f.write("\n")
+
+    n_rules = len(result["rules"])
+    n_codes = sum(len(r.get("equipmentItemCode", [])) for r in result["rules"])
+    print(f"Generated {out.name}: {n_rules} rules, {n_codes} item codes")
+
+
+if __name__ == "__main__":
+    main()

@@ -2,19 +2,21 @@
 
 ## References
 
-- Item codes (Armor.txt): https://github.com/fabd/diablo2/blob/master/code/d2_113_data/Armor.txt
-- Item codes (Weapons.txt): https://github.com/fabd/diablo2/blob/master/code/d2_113_data/Weapons.txt
+- Item codes (Armor.txt): lootfilter/Armor.txt (from github.com/fabd/diablo2)
+- Item codes (Weapons.txt): lootfilter/Weapons.txt
+- Unique items: lootfilter/UniqueItems.txt
+- Set items: lootfilter/SetItems.txt
 - Endgame loot filter reference: https://github.com/Roguecor/d2r-endgame-loot-filter
 - Warlock build (Echoing Strike): https://maxroll.gg/d2/guides/echoing-strike-warlock-guide
 - Hammerdin build: https://maxroll.gg/d2/guides/blessed-hammer-paladin
 - Javazon build: https://maxroll.gg/d2/guides/lightning-fury-amazon-guide
+- Frenzy Barb build: https://maxroll.gg/d2/guides/frenzy-barbarian
 - Valuable unique/set items: https://maxroll.gg/d2/items/valuable-unique-set-items
 - Item codes (all types): lootfilter/Diablo 2 Items Codes.html
 - Item base lookup: https://diablo.fandom.com/wiki/ (append item name, e.g. Bramble_Mitts)
 
 ## Filter conventions
 
-- Bump the version number in the filter `name` field on each commit (e.g. "Nator BiS v1" -> "Nator BiS v2")
 - All items are shown by default. Show rules trump hide rules. Rule order does not matter
 - `filterEtherealSocketed: true` means the rule applies to ethereal/socketed items
 - `equipmentItemCode` uses 3-letter codes from the game data files (Armor.txt, Weapons.txt)
@@ -23,11 +25,16 @@
 
 ## Nator filter
 
-- Single filter file: `nator.filter.json`
-- Targets three builds: Warlock, Hammerdin, Javazon (plus merc gear and ultra-rare drops)
-- Unique and set items are in separate rules to avoid showing non-BiS items that share a base type
-- Runeword bases are limited to specific desirable bases, not all elite socketed items
+- Source of truth: `lootfilter/nator.source.yaml` (human-readable item names)
+- Generated output: `lootfilter/nator.filter.json` (do not edit directly)
+- Build: `python3 lootfilter/build.py` (resolves names → codes, generates JSON)
+- Bump version in `nator.source.yaml` `name` field on each commit
+- Targets builds: Warlock, Sorc, Hammerdin, Javazon, Frenzy (plus merc gear and ultra-rare drops)
+- Rule structure: Unicorn Drops → Common (Unique/Set/Bases) → Per-build (Unique/Set/Bases) → Merc → Other
+- Warlock items use `equipmentCategory: ["warlo"]` (category-based, not item codes)
 - Toggleable disabled rules for farming, pre-BiS gear, and leveling bases
+- Data files (Armor.txt, Weapons.txt, UniqueItems.txt, SetItems.txt) are local for code lookups
+- Overrides in YAML handle D2R items and 1.13 data file typos/old names
 
 ## Reviewed and kept (not BiS but intentionally included)
 

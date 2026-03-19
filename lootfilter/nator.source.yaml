@@ -1,0 +1,324 @@
+name: Nator v23
+
+# Names that differ from 1.13 data files (D2R additions, typos, old names)
+overrides:
+  # D2R additions (not in 1.13 data)
+  Wraithstep: utb
+
+  # Typos in 1.13 data
+  Valkyrie Wing: xhm             # Data: "Valkiry Wing"
+  Death's Web: 7gw               # Data: "Deaths's Web"
+  Thundergod's Vigor: zhb        # Data: "Thudergod's Vigor"
+  Verdungo's Hearty Cord: umc    # Data: "Verdugo's Hearty Cord"
+  Griswold's Redemption: 7ws     # Data: "Griswolds's Redemption"
+
+  # Renamed/different in data
+  Death's Fathom: obf            # Data: "Fathom"
+  Astreon's Iron Ward: 7ws       # Data: "Ironward"
+  Soul Drainer: umg              # Data: "Souldrain"
+  Tal Rasha's Guardianship: uth  # Data: "Tal Rasha's Howling Wind"
+  Tal Rasha's Fine-Spun Cloth: zmb  # Data: "Tal Rasha's Fire-Spun Cloth"
+
+  # Set items with non-obvious base codes
+  Reaper's Toll: 7s8             # Data: "The Reaper's Toll"
+  Immortal King's Will: ba5      # Avenger Guard (barb helm)
+
+# ═══════════════════════════════════════════════════════════════
+# Ultra-rare drops — always show
+# ═══════════════════════════════════════════════════════════════
+
+unicorn:
+  unique:
+    - Tyrael's Might              # Sacred Armor
+    - The Grandfather             # Colossus Blade
+    - Griffon's Eye               # Diadem
+    - Death's Web                 # Unearthed Wand
+    - Windforce                   # Hydra Bow
+    - Mang Song's Lesson          # Archon Staff
+    - Death's Fathom              # Dimensional Shard
+
+# ═══════════════════════════════════════════════════════════════
+# Shared across 2+ builds
+# ═══════════════════════════════════════════════════════════════
+
+common:
+  unique:
+    # Helms
+    - Harlequin Crest             # Shako
+    - Crown of Ages               # Corona
+    - Kira's Guardian             # Tiara
+    - Vampire Gaze                # Grim Helm
+    - Valkyrie Wing               # Winged Helm
+    - Blackhorn's Face            # Death Mask
+    - Stealskull                  # Casque
+    - Crown of Thieves            # Grand Crown
+    - Rockstopper                 # Sallet
+    - Ravenlore                   # Sky Spirit (Druid)
+    - Andariel's Visage           # Demonhead
+    # Armors
+    - Skin of the Vipermagi       # Serpentskin Armor
+    - Skullder's Ire              # Russet Armor
+    - Arkaine's Valor             # Balrog Skin
+    - Duriel's Shell              # Cuirass
+    # Weapons
+    - Lightsabre                  # Phase Blade (also Azurewrath)
+    - Stormlash                   # Scourge
+    - Wizardspike                 # Bone Knife
+    - Arioc's Needle              # Hyperion Spear
+    - Ondal's Wisdom              # Elder Staff
+    - Blade of Ali Baba           # Tulwar
+    - Stormshield                 # Monarch
+    - Homunculus                  # Hierophant Trophy
+    # Gloves
+    - Dracul's Grasp              # Vampirebone Gloves
+    - Soul Drainer                # Vambraces
+    - Chance Guards               # Chain Gloves
+    - Magefist                    # Light Gauntlets
+    # Boots
+    - Sandstorm Trek              # Scarabshell Boots
+    - Shadow Dancer               # Myrmidon Greaves
+    - Wraithstep                  # Mirrored Boots (D2R)
+    - War Traveler                # Battle Boots
+    - Silkweave                   # Mesh Boots
+    - Gore Rider                  # War Boots
+    - Waterwalk                   # Sharkskin Boots
+    # Belts
+    - Arachnid Mesh               # Spiderweb Sash
+    - Verdungo's Hearty Cord      # Mithril Coil
+    - Nosferatu's Coil            # Vampirefang Belt
+    - String of Ears              # Demonhide Sash
+    - Thundergod's Vigor          # War Belt
+    - Goldwrap                    # Heavy Belt
+    # Other
+    - Gull                        # Dagger
+    - Chromatic Ire               # Cedar Staff
+
+  set:
+    - Guillaume's Face            # Winged Helm (crushing blow)
+    - Aldur's Advance             # Battle Boots
+    - Trang-Oul's Claws           # Heavy Bracers (caster)
+    - Laying of Hands             # Bramble Mitts
+
+  bases:
+    - Monarch                     # Spirit
+    - Archon Plate                # Enigma, Fortitude, etc.
+    - Crystal Sword               # Spirit, Call to Arms
+    - Phase Blade                 # Grief, Last Wish, Lawbringer
+    # Merc polearms
+    - Giant Thresher              # Infinity, Insight
+    - Thresher                    # Infinity, Insight
+    - Cryptic Axe                 # Infinity, Insight
+    - Colossus Voulge             # Infinity, Insight
+    - Great Poleaxe               # Infinity, Insight
+    # Other
+    - Thunder Maul
+    - Glorious Axe
+    - Bone Visage                 # Delirium
+
+# ═══════════════════════════════════════════════════════════════
+# Build-specific
+# ═══════════════════════════════════════════════════════════════
+
+build_order: [sorc, hammerdin, javazon, frenzy]
+
+builds:
+  sorc:
+    unique:
+      - Nightwing's Veil          # Spired Helm
+      - Ormus' Robes              # Dusk Shroud
+      - The Oculus                # Swirling Crystal
+      - Eschuta's Temper          # Eldritch Orb
+      - Snowclash                 # Battle Belt
+    set:
+      - Tal Rasha's Lidless Eye   # Swirling Crystal
+      - Tal Rasha's Horadric Crest  # Death Mask
+      - Tal Rasha's Guardianship  # Lacquered Plate
+      - Tal Rasha's Fine-Spun Cloth  # Mesh Belt
+    bases:
+      - Archon Staff              # Obsession
+      - Battle Staff              # Memory
+
+  hammerdin:
+    unique:
+      - Astreon's Iron Ward       # Caduceus
+      - Herald of Zakarum         # Gilded Shield
+      - Hand of Blessed Light     # Divine Sceptre
+    set:
+      - Griswold's Honor          # Vortex Shield
+      - Griswold's Redemption     # Caduceus
+    bases:
+      - Sacred Targe              # Exile, Spirit
+
+  javazon:
+    unique:
+      - Thunderstroke             # Matriarchal Javelin
+      - Titan's Revenge           # Ceremonial Javelin
+      - Lacerator                 # Winged Axe
+      - Warshrike                 # Winged Knife
+      - Razortail                 # Sharkskin Belt
+
+  frenzy:
+    unique:
+      - Arreat's Face             # Slayer Guard
+      - Goblin Toe                # Light Plate Boots
+      - Guardian Angel            # Templar Coat (merc)
+    set:
+      - Immortal King's Will      # Avenger Guard
+      - Immortal King's Pillar    # War Boots
+      - Immortal King's Detail    # War Belt
+      - Trang-Oul's Girth         # Troll Belt
+    bases:
+      - Berserker Axe             # Beast, Breath of the Dying
+      - Balrog Blade              # Oath
+
+# ═══════════════════════════════════════════════════════════════
+# Merc — ethereal uniques only
+# ═══════════════════════════════════════════════════════════════
+
+merc:
+  unique:
+    - Earth Shifter               # Thunder Maul
+    - Reaper's Toll               # Thresher
+    - Tomb Reaver                 # Cryptic Axe
+    - Shaftstop                   # Mesh Armor
+
+# ═══════════════════════════════════════════════════════════════
+# Other rules — category-based, rares, disabled, hide
+# ═══════════════════════════════════════════════════════════════
+
+other_rules:
+  # Warlock (all set/unique by category, not item codes)
+  - name: BiS Warlock
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [set, unique]
+    equipmentCategory: [warlo]
+
+  - name: Rare Grimoires
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [rare]
+    equipmentCategory: [warlo]
+
+  # Rare diadems (Griffon's-tier affixes)
+  - name: BiS Rares
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [rare]
+    items: [Diadem]
+
+  - name: Accessories
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [rare, unique]
+    equipmentCategory: [acce, jewel]
+
+  - name: Set Amulets
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [set]
+    equipmentCategory: [amule]
+
+  # ── Disabled / toggleable ──
+
+  - name: BiS Bases Normal
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: true
+    equipmentQuality: [normal]
+    equipmentItemCode: [fla]
+
+  - name: Farm Uni/Set Elite
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [unique, set]
+    equipmentQuality: [elite]
+    equipmentCategory: [acce, armo, weap, jewel]
+
+  - name: Farm Bases Elite
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: true
+    equipmentQuality: [elite]
+
+  - name: Pre-BiS Unique Normal
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [unique]
+    equipmentQuality: [normal]
+    equipmentItemCode: [vgl, tbt, dgr, skp, mbl, bld]
+
+  - name: Pre-BiS Unique Except
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [unique]
+    equipmentQuality: [exceptional]
+    equipmentItemCode: [xkp, xap, xml, xrs, 9fc, 9wn, xpk]
+
+  - name: Pre-BiS Bases Except
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: true
+    equipmentQuality: [exceptional]
+    equipmentItemCode: [xsk, xh9, xea, xrs, xtp]
+
+  - name: All pots except minor
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    itemCode: [hp2, hp3, hp4, hp5, mp2, mp3, mp4, mp5, rvs, wms, yps, vps]
+
+  - name: All rejuvs
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    itemCode: [rvs]
+
+  - name: Magic Jewels
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [magic]
+    equipmentCategory: [jewel]
+
+  - name: Magic Rings
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [magic]
+    equipmentCategory: [rings]
+
+  - name: Lvl Bases Normal
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: true
+    equipmentQuality: [normal]
+    equipmentItemCode: [crs, bsd, lrg, kit, pax, hal, wsc, scy]
+
+  - name: Lvl Bases Exceptional
+    enabled: false
+    ruleType: show
+    filterEtherealSocketed: true
+    equipmentQuality: [exceptional]
+    equipmentItemCode: [9vo, 9s8, 9pa, 9h9, 9wc]
+
+  # ── Hide All ──
+
+  - name: Hide All
+    enabled: true
+    ruleType: hide
+    filterEtherealSocketed: true
+    equipmentRarity: [rare, lowQuality, set, unique, magic, hiQuality, normal]
+    equipmentQuality: [normal, exceptional, elite]
+    equipmentCategory: [jewel, rings, armo, weap, amule]
+    itemCategory: [ammo, scrlt, keysr]
+    itemCode: [hp2, mp3, mp4, wms, hp5, hp1, rvs, hp4, mp1, mp5, mp2, yps, vps, hp3]
+    goldFilterValue: 5000

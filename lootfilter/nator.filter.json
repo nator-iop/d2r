@@ -1,56 +1,246 @@
 {
-    "name": "Nator v22",
+    "name": "Nator v23",
     "rules": [
         {
-            "name": "BiS Unique Elite",
+            "name": "Unicorn Drops",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "equipmentRarity": [
                 "unique"
             ],
-            "equipmentQuality": [
-                "elite"
+            "equipmentItemCode": [
+                "uar",
+                "7gd",
+                "ci3",
+                "7gw",
+                "6lw",
+                "6ws",
+                "obf"
+            ]
+        },
+        {
+            "name": "Common Unique",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
             ],
             "equipmentItemCode": [
                 "uap",
                 "urn",
-                "ci3",
                 "ci2",
+                "xh9",
+                "xhm",
+                "xsk",
+                "xlm",
+                "xrn",
+                "xkp",
+                "dre",
+                "usk",
+                "xea",
+                "xpl",
+                "upl",
+                "xrs",
+                "7cr",
+                "7fl",
+                "7dg",
+                "7sr",
+                "6cs",
+                "9fc",
+                "uit",
+                "nea",
+                "uvg",
+                "umg",
+                "mgl",
+                "tgl",
+                "uvb",
+                "uhb",
+                "utb",
+                "xtb",
+                "xmb",
+                "xhb",
+                "xvb",
                 "ulc",
                 "umc",
                 "uvc",
-                "uvg",
-                "uvb",
-                "utb",
-                "uit",
-                "usk",
-                "uhm",
-                "uar",
-                "7gw",
-                "7gd",
-                "7fl",
-                "7ws",
-                "6lw",
-                "6ws",
-                "7dg",
-                "7sr",
-                "amf",
-                "upl",
-                "uui",
-                "uhb",
-                "7cr",
-                "6cs",
-                "7b8",
-                "7bk",
-                "obf",
-                "obc",
-                "dre",
-                "umg"
+                "zlb",
+                "zhb",
+                "tbl",
+                "dgr",
+                "8cs"
             ]
         },
         {
-            "name": "Eth Unique Merc",
+            "name": "Common Set",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "xhm",
+                "xtb",
+                "xmg",
+                "ulg"
+            ]
+        },
+        {
+            "name": "Common Bases",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentItemCode": [
+                "uit",
+                "utp",
+                "crs",
+                "7cr",
+                "7wc",
+                "7s8",
+                "7pa",
+                "7vo",
+                "7h7",
+                "7gm",
+                "7gi",
+                "uh9"
+            ]
+        },
+        {
+            "name": "Sorc Unique",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "uhm",
+                "uui",
+                "oba",
+                "obc",
+                "ztb"
+            ]
+        },
+        {
+            "name": "Sorc Set",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "oba",
+                "xsk",
+                "uth",
+                "zmb"
+            ]
+        },
+        {
+            "name": "Sorc Bases",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentItemCode": [
+                "6ws",
+                "bst"
+            ]
+        },
+        {
+            "name": "Hammerdin Unique",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "7ws",
+                "pa9",
+                "9ws"
+            ]
+        },
+        {
+            "name": "Hammerdin Set",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "paf",
+                "7ws"
+            ]
+        },
+        {
+            "name": "Hammerdin Bases",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentItemCode": [
+                "pab"
+            ]
+        },
+        {
+            "name": "Javazon Unique",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "amf",
+                "ama",
+                "7b8",
+                "7bk",
+                "zvb"
+            ]
+        },
+        {
+            "name": "Frenzy Unique",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentItemCode": [
+                "baa",
+                "tbt",
+                "xlt"
+            ]
+        },
+        {
+            "name": "Frenzy Set",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "ba5",
+                "xhb",
+                "zhb",
+                "utc"
+            ]
+        },
+        {
+            "name": "Frenzy Bases",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentItemCode": [
+                "7wa",
+                "7gs"
+            ]
+        },
+        {
+            "name": "Merc Eth Unique",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
@@ -69,180 +259,6 @@
             ]
         },
         {
-            "name": "BiS Unique Exceptional",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentQuality": [
-                "exceptional"
-            ],
-            "equipmentItemCode": [
-                "xhm",
-                "xh9",
-                "xea",
-                "xpl",
-                "xtb",
-                "xvb",
-                "xmb",
-                "xhb",
-                "zvb",
-                "zhb",
-                "pa9",
-                "ama",
-                "9ws",
-                "oba",
-                "baa",
-                "nea",
-                "9fc",
-                "8cs",
-                "xlm",
-                "xsk",
-                "zlb"
-            ]
-        },
-        {
-            "name": "BiS Unique Normal",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentQuality": [
-                "normal"
-            ],
-            "equipmentItemCode": [
-                "tgl",
-                "mgl",
-                "tbl",
-                "dgr",
-                "lgl"
-            ]
-        },
-        {
-            "name": "BiS Set Elite",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentQuality": [
-                "elite"
-            ],
-            "equipmentItemCode": [
-                "uth",
-                "ulg",
-                "paf",
-                "7ws"
-            ]
-        },
-        {
-            "name": "BiS Set Exceptional",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentQuality": [
-                "exceptional"
-            ],
-            "equipmentItemCode": [
-                "xhm",
-                "xtb",
-                "xmg",
-                "zhb",
-                "zmb"
-            ]
-        },
-        {
-            "name": "Sorc Unique",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentItemCode": [
-                "ztb",
-                "oba",
-                "obf",
-                "uit",
-                "dgr",
-                "9fc",
-                "uhm",
-                "uap",
-                "urn",
-                "uui",
-                "xpl",
-                "xea",
-                "lgl",
-                "mgl",
-                "ulc",
-                "tbl",
-                "umc",
-                "xtb",
-                "uvb",
-                "xvb",
-                "usk",
-                "upl",
-                "xrs",
-                "xh9",
-                "xrn",
-                "xlm",
-                "xkp"
-            ]
-        },
-        {
-            "name": "Sorc Set",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentItemCode": [
-                "oba",
-                "xsk",
-                "uth",
-                "xmg",
-                "zmb",
-                "zhb",
-                "xtb"
-            ]
-        },
-        {
-            "name": "Sorc Bases Elite",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentQuality": [
-                "elite"
-            ],
-            "equipmentItemCode": [
-                "uit",
-                "6ws",
-                "7wc"
-            ]
-        },
-        {
-            "name": "Sorc Bases Normal",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentQuality": [
-                "normal"
-            ],
-            "equipmentItemCode": [
-                "crs",
-                "bst"
-            ]
-        },
-        {
             "name": "BiS Warlock",
             "enabled": true,
             "ruleType": "show",
@@ -250,6 +266,18 @@
             "equipmentRarity": [
                 "set",
                 "unique"
+            ],
+            "equipmentCategory": [
+                "warlo"
+            ]
+        },
+        {
+            "name": "Rare Grimoires",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "rare"
             ],
             "equipmentCategory": [
                 "warlo"
@@ -268,67 +296,6 @@
             ]
         },
         {
-            "name": "Rare Grimoires",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "rare"
-            ],
-            "equipmentCategory": [
-                "warlo"
-            ]
-        },
-        {
-            "name": "Frenzy Bases",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentQuality": [
-                "elite"
-            ],
-            "equipmentItemCode": [
-                "7wa",
-                "7gs"
-            ]
-        },
-        {
-            "name": "Frenzy Set",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentQuality": [
-                "normal",
-                "exceptional",
-                "elite"
-            ],
-            "equipmentItemCode": [
-                "ba5",
-                "xhb",
-                "utc"
-            ]
-        },
-        {
-            "name": "Frenzy Unique",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "unique"
-            ],
-            "equipmentQuality": [
-                "normal",
-                "exceptional"
-            ],
-            "equipmentItemCode": [
-                "tbt",
-                "xlt"
-            ]
-        },
-        {
             "name": "Accessories",
             "enabled": true,
             "ruleType": "show",
@@ -343,26 +310,15 @@
             ]
         },
         {
-            "name": "BiS Bases Elite",
+            "name": "Set Amulets",
             "enabled": true,
             "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentQuality": [
-                "elite"
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
             ],
-            "equipmentItemCode": [
-                "uit",
-                "utp",
-                "pab",
-                "7cr",
-                "7s8",
-                "7wc",
-                "7pa",
-                "7gm",
-                "7gi",
-                "7h7",
-                "7vo",
-                "uh9"
+            "equipmentCategory": [
+                "amule"
             ]
         },
         {
@@ -443,8 +399,7 @@
                 "xrs",
                 "9fc",
                 "9wn",
-                "xpk",
-                "xrs"
+                "xpk"
             ]
         },
         {
@@ -490,18 +445,6 @@
             "filterEtherealSocketed": false,
             "itemCode": [
                 "rvs"
-            ]
-        },
-        {
-            "name": "Set Amulets",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "set"
-            ],
-            "equipmentCategory": [
-                "amule"
             ]
         },
         {
