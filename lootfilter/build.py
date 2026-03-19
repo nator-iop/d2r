@@ -5,6 +5,7 @@ Usage: python3 lootfilter/build.py
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -163,11 +164,30 @@ def build(source):
     return {"name": source["name"], "rules": rules}
 
 
+def bump_version(source, src_path):
+    """Auto-increment version number in source YAML."""
+    name = source["name"]
+    m = re.search(r"(v)(\d+)", name)
+    if not m:
+        return
+    old_ver = int(m.group(2))
+    new_ver = old_ver + 1
+    new_name = name[:m.start(2)] + str(new_ver) + name[m.end(2):]
+    source["name"] = new_name
+
+    # Update YAML file in place
+    text = src_path.read_text()
+    text = text.replace(f"name: {name}", f"name: {new_name}", 1)
+    src_path.write_text(text)
+    print(f"Version: {name} -> {new_name}")
+
+
 def main():
     src = DIR / "nator.source.yaml"
     with open(src) as f:
         source = yaml.safe_load(f)
 
+    bump_version(source, src)
     result = build(source)
 
     out = DIR / "nator.filter.json"
