@@ -35,6 +35,7 @@
 - Toggleable disabled rules for farming, pre-BiS gear, and leveling bases
 - Data files (Armor.txt, Weapons.txt, UniqueItems.txt, SetItems.txt) are local for code lookups
 - Overrides in YAML handle D2R items and 1.13 data file typos/old names
+- **Hard limit: 32 rules max** — game silently truncates beyond this (Hide All must be last)
 
 ## Reviewed and kept (not BiS but intentionally included)
 
