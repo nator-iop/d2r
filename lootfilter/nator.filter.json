@@ -1,5 +1,5 @@
 {
-    "name": "Nator v21",
+    "name": "Nator v22",
     "rules": [
         {
             "name": "BiS Unique Elite",
@@ -277,6 +277,55 @@
             ],
             "equipmentCategory": [
                 "warlo"
+            ]
+        },
+        {
+            "name": "Frenzy Bases",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "7wa",
+                "7gs"
+            ]
+        },
+        {
+            "name": "Frenzy Set",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentQuality": [
+                "normal",
+                "exceptional",
+                "elite"
+            ],
+            "equipmentItemCode": [
+                "ba5",
+                "xhb",
+                "utc"
+            ]
+        },
+        {
+            "name": "Frenzy Unique",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "unique"
+            ],
+            "equipmentQuality": [
+                "normal",
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "tbt",
+                "xlt"
             ]
         },
         {

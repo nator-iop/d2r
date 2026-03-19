@@ -26,6 +26,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 |------|-----------|---------|--------|-----|
 | `dre` | Sky Spirit | elite | Ravenlore | |
 | `baa` | Slayer Guard | exceptional | Arreat's Face | |
+| `ba5` | Avenger Guard | normal | | Immortal King's Will |
 
 ## Armors
 
@@ -39,6 +40,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `xpl` | Russet Armor | exceptional | Skullder's Ire | |
 | `xrs` | Cuirass | exceptional | Duriel's Shell | |
 | `xhn` | Mesh Armor | exceptional | Shaftstop | |
+| `xlt` | Templar Coat | exceptional | Guardian Angel | |
 | `fld` | Field Plate | normal | Rockfleece | |
 
 ## Shields
@@ -66,7 +68,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `mgl` | Chain Gloves | normal | Chance Guards | |
 | `tgl` | Light Gauntlets | normal | | |
 | `xmg` | Heavy Bracers | exceptional | | Trang-Oul's Claws |
-| `xhb` | War Boots | exceptional | Gore Rider | |
+| `xhb` | War Boots | exceptional | Gore Rider | IK's Pillar |
 
 ## Boots
 
@@ -77,6 +79,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `utb` | Mirrored Boots | elite | Wraithstep | |
 | `xtb` | Battle Boots | exceptional | War Traveler | Aldur's Advance |
 | `xvb` | Sharkskin Boots | exceptional | Waterwalk | |
+| `tbt` | Light Plate Boots | normal | Goblin Toe | |
 
 ## Belts
 
@@ -85,6 +88,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `ulc` | Spiderweb Sash | elite | Arachnid Mesh | |
 | `umc` | Mithril Coil | elite | Verdungo's Hearty Cord | |
 | `uvc` | Vampirefang Belt | elite | Nosferatu's Coil | |
+| `utc` | Troll Belt | elite | | Trang-Oul's Girth |
 | `ztb` | Battle Belt | exceptional | Snowclash | Wilhelm's Pride |
 | `zmb` | Mesh Belt | exceptional | | Tal Rasha's Fine-Spun Cloth |
 | `zhb` | War Belt | exceptional | | IK's Detail |
@@ -98,6 +102,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 |------|-----------|---------|--------|-----|
 | `7cr` | Phase Blade | elite | Lightsabre, Azurewrath | |
 | `7gd` | Colossus Blade | elite | The Grandfather | |
+| `7gs` | Balrog Blade | elite | | |
 | `9cr` | Dimensional Blade | exceptional | | |
 | `crs` | Crystal Sword | normal | | |
 
@@ -119,6 +124,7 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 
 | Code | Base Item | Quality | Unique | Set |
 |------|-----------|---------|--------|-----|
+| `7wa` | Berserker Axe | elite | | |
 | `7gi` | Glorious Axe | elite | Executioner's Justice | |
 | `7gm` | Thunder Maul | elite | Earth Shifter | |
 | `7fl` | Scourge | elite | Stormlash | |
@@ -210,3 +216,5 @@ Item codes used in nator.filter.json mapped to base items and the unique/set ite
 | `7vo` | Colossus Voulge | Infinity / Insight |
 | `utp` | Archon Plate | various |
 | `7cr` | Phase Blade | various |
+| `7wa` | Berserker Axe | Beast / BotD |
+| `7gs` | Balrog Blade | Oath |
