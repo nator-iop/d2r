@@ -172,18 +172,6 @@
             ]
         },
         {
-            "name": "BiS Rares",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "rare"
-            ],
-            "equipmentItemCode": [
-                "ci3"
-            ]
-        },
-        {
             "name": "Accessories",
             "enabled": true,
             "ruleType": "show",
@@ -210,15 +198,15 @@
             ]
         },
         {
-            "name": "BiS Bases Normal",
-            "enabled": false,
+            "name": "Rare Diadems",
+            "enabled": true,
             "ruleType": "show",
-            "filterEtherealSocketed": true,
-            "equipmentQuality": [
-                "normal"
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "rare"
             ],
             "equipmentItemCode": [
-                "fla"
+                "ci3"
             ]
         },
         {
@@ -247,6 +235,50 @@
             "filterEtherealSocketed": true,
             "equipmentQuality": [
                 "elite"
+            ]
+        },
+        {
+            "name": "Farm Magic Jewels",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "magic"
+            ],
+            "equipmentCategory": [
+                "jewel"
+            ]
+        },
+        {
+            "name": "Farm Magic Rings",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "magic"
+            ],
+            "equipmentCategory": [
+                "rings"
+            ]
+        },
+        {
+            "name": "Farm Potions",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "itemCode": [
+                "hp2",
+                "hp3",
+                "hp4",
+                "hp5",
+                "mp2",
+                "mp3",
+                "mp4",
+                "mp5",
+                "rvs",
+                "wms",
+                "yps",
+                "vps"
             ]
         },
         {
@@ -291,6 +323,18 @@
             ]
         },
         {
+            "name": "Pre-BiS Bases Normal",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal"
+            ],
+            "equipmentItemCode": [
+                "fla"
+            ]
+        },
+        {
             "name": "Pre-BiS Bases Except",
             "enabled": false,
             "ruleType": "show",
@@ -304,50 +348,6 @@
                 "xea",
                 "xrs",
                 "xtp"
-            ]
-        },
-        {
-            "name": "All pots except minor",
-            "enabled": false,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "itemCode": [
-                "hp2",
-                "hp3",
-                "hp4",
-                "hp5",
-                "mp2",
-                "mp3",
-                "mp4",
-                "mp5",
-                "rvs",
-                "wms",
-                "yps",
-                "vps"
-            ]
-        },
-        {
-            "name": "Magic Jewels",
-            "enabled": false,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "magic"
-            ],
-            "equipmentCategory": [
-                "jewel"
-            ]
-        },
-        {
-            "name": "Magic Rings",
-            "enabled": false,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "magic"
-            ],
-            "equipmentCategory": [
-                "rings"
             ]
         },
         {

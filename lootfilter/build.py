@@ -139,6 +139,12 @@ def build(source):
                                    rarity=["unique"], eth=True,
                                    quality=["elite", "exceptional"]))
 
+    # Rule count check
+    n_other = len(source.get("other_rules", []))
+    n_total = len(rules) + n_other
+    if n_total > 32:
+        print(f"WARNING: {n_total} rules exceeds 32-rule game limit!")
+
     # Other rules (passthrough, with optional name resolution)
     for rule in source.get("other_rules", []):
         rule = dict(rule)
