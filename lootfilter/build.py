@@ -105,6 +105,12 @@ def build(source):
     r = Resolver(source.get("overrides"))
     rules = []
 
+    # White bases (to Larzuk — non-eth, non-socketed)
+    if items := source.get("whites"):
+        codes = r.resolve_list(items, "whites")
+        rules.append(make_rule("Whites", codes,
+                               rarity=["normal", "hiQuality"]))
+
     # Unicorn drops
     if u := source.get("unicorn", {}):
         if items := u.get("unique"):
