@@ -2,17 +2,14 @@
 
 ## References
 
-- Item codes (Armor.txt): lootfilter/Armor.txt (from github.com/fabd/diablo2)
-- Item codes (Weapons.txt): lootfilter/Weapons.txt
-- Unique items: lootfilter/UniqueItems.txt
-- Set items: lootfilter/SetItems.txt
+- Game data files: data/ (Armor.txt, Weapons.txt, UniqueItems.txt, SetItems.txt from github.com/fabd/diablo2)
+- Item code reference: data/MAPPINGS.md
 - Endgame loot filter reference: https://github.com/Roguecor/d2r-endgame-loot-filter
 - Warlock build (Echoing Strike): https://maxroll.gg/d2/guides/echoing-strike-warlock-guide
 - Hammerdin build: https://maxroll.gg/d2/guides/blessed-hammer-paladin
 - Javazon build: https://maxroll.gg/d2/guides/lightning-fury-amazon-guide
 - Frenzy Barb build: https://maxroll.gg/d2/guides/frenzy-barbarian
 - Valuable unique/set items: https://maxroll.gg/d2/items/valuable-unique-set-items
-- Item codes (all types): lootfilter/Diablo 2 Items Codes.html
 - Item base lookup: https://diablo.fandom.com/wiki/ (append item name, e.g. Bramble_Mitts)
 
 ## Filter conventions
@@ -25,13 +22,13 @@
 
 ## Nator filter
 
-- Source of truth: `lootfilter/nator.source.yaml` (human-readable item names)
+- Source of truth: `build/nator.source.yaml` (human-readable item names)
 - Generated output: `lootfilter/nator.filter.json` (do not edit directly)
-- Build: `python3 lootfilter/build.py` (resolves names → codes, generates JSON, auto-bumps version)
+- Build: `python3 build/build.py` (resolves names → codes, generates JSON, auto-bumps version)
 - Targets builds: Warlock, Sorc, Hammerdin, Javazon, Frenzy (plus merc gear and ultra-rare drops)
 - YAML organizes items per-build; build script merges into 3 rules: Unique, Set, Bases
 - Warlock items use `equipmentCategory: ["warlo"]` (category-based, not item codes)
-- Rule order: Unicorn Drops → Unique/Set/Bases → Merc → Warlock → Accessories → Set Amulets → Rare Diadems → disabled rules → Hide All
+- Rule order: Whites → Unicorn Drops → Unique/Set/Bases → Merc → Warlock → Accessories → Set Amulets → Rare Diadems → disabled rules → Hide All
 - Toggleable disabled rules for farming, pre-BiS gear, and leveling bases
 - Data files (Armor.txt, Weapons.txt, UniqueItems.txt, SetItems.txt) are local for code lookups
 - Overrides in YAML handle D2R items and 1.13 data file typos/old names

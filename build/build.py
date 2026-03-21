@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build nator.filter.json from nator.source.yaml
 
-Usage: python3 lootfilter/build.py
+Usage: python3 build/build.py
 """
 
 import json
@@ -15,7 +15,10 @@ except ImportError:
     print("PyYAML required: pip install pyyaml")
     sys.exit(1)
 
-DIR = Path(__file__).parent
+ROOT = Path(__file__).parent.parent
+BUILD_DIR = ROOT / "build"
+DATA_DIR = ROOT / "data"
+OUT_DIR = ROOT / "lootfilter"
 
 
 def normalize(s):
@@ -26,7 +29,7 @@ def normalize(s):
 def load_tsv(filename, key_col, val_col):
     """Load a TSV data file as {col[key]: col[val]}."""
     result = {}
-    with open(DIR / filename, encoding="latin-1") as f:
+    with open(DATA_DIR / filename, encoding="latin-1") as f:
         header = f.readline().strip().split("\t")
         ki = header.index(key_col)
         vi = header.index(val_col)
@@ -189,14 +192,14 @@ def bump_version(source, src_path):
 
 
 def main():
-    src = DIR / "nator.source.yaml"
+    src = BUILD_DIR / "nator.source.yaml"
     with open(src) as f:
         source = yaml.safe_load(f)
 
     bump_version(source, src)
     result = build(source)
 
-    out = DIR / "nator.filter.json"
+    out = OUT_DIR / "nator.filter.json"
     with open(out, "w") as f:
         json.dump(result, f, indent=4)
         f.write("\n")

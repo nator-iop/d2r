@@ -4,10 +4,10 @@ Loot filter for Diablo 2 Resurrected, targeting five builds: **Warlock** (Echoin
 
 ## How it works
 
-The filter is maintained as a human-readable YAML file (`lootfilter/nator.source.yaml`) with item names organized by build. A build script resolves names to game codes and generates the filter JSON.
+The filter is maintained as a human-readable YAML file (`build/nator.source.yaml`) with item names organized by build. A build script resolves names to game codes and generates the filter JSON.
 
 ```
-Edit nator.source.yaml → Run python3 lootfilter/build.py → Import nator.filter.json
+Edit build/nator.source.yaml → Run python3 build/build.py → Import lootfilter/nator.filter.json
 ```
 
 The build script auto-increments the version number on each run.
