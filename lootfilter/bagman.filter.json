@@ -1,0 +1,42 @@
+{
+    "name": "Bagman v2",
+    "rules": [
+        {
+            "name": "Full Rejuvs",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "itemCode": [
+                "rvl"
+            ]
+        },
+        {
+            "name": "Hide Junk",
+            "enabled": true,
+            "ruleType": "hide",
+            "filterEtherealSocketed": false,
+            "itemCategory": [
+                "ammo",
+                "scrlt",
+                "keysr"
+            ],
+            "itemCode": [
+                "hp1",
+                "hp2",
+                "hp3",
+                "hp4",
+                "hp5",
+                "mp1",
+                "mp2",
+                "mp3",
+                "mp4",
+                "mp5",
+                "rvs",
+                "wms",
+                "yps",
+                "vps"
+            ],
+            "goldFilterValue": 1000
+        }
+    ]
+}

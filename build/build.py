@@ -191,15 +191,16 @@ def bump_version(source, src_path):
     print(f"Version: {name} -> {new_name}")
 
 
-def main():
-    src = BUILD_DIR / "nator.source.yaml"
-    with open(src) as f:
+def build_filter(src_path):
+    """Build a single filter from a source YAML file."""
+    with open(src_path) as f:
         source = yaml.safe_load(f)
 
-    bump_version(source, src)
+    bump_version(source, src_path)
     result = build(source)
 
-    out = OUT_DIR / "nator.filter.json"
+    stem = src_path.stem.replace(".source", "")
+    out = OUT_DIR / f"{stem}.filter.json"
     with open(out, "w") as f:
         json.dump(result, f, indent=4)
         f.write("\n")
@@ -207,6 +208,15 @@ def main():
     n_rules = len(result["rules"])
     n_codes = sum(len(r.get("equipmentItemCode", [])) for r in result["rules"])
     print(f"Generated {out.name}: {n_rules} rules, {n_codes} item codes")
+
+
+def main():
+    sources = sorted(BUILD_DIR.glob("*.source.yaml"))
+    if not sources:
+        print("No .source.yaml files found in build/")
+        sys.exit(1)
+    for src in sources:
+        build_filter(src)
 
 
 if __name__ == "__main__":
