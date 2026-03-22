@@ -1,4 +1,4 @@
-name: Nator v30
+name: Nator v31
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -142,7 +142,6 @@ builds:
       - Tal Rasha's Fine-Spun Cloth  # Mesh Belt
     bases:
       - Archon Staff              # Obsession
-      - Battle Staff              # Memory
 
   hammerdin:
     unique:
