@@ -196,18 +196,32 @@ def build_filter(src_path):
     with open(src_path) as f:
         source = yaml.safe_load(f)
 
-    bump_version(source, src_path)
     result = build(source)
 
     stem = src_path.stem.replace(".source", "")
     out = OUT_DIR / f"{stem}.filter.json"
-    with open(out, "w") as f:
-        json.dump(result, f, indent=4)
-        f.write("\n")
 
-    n_rules = len(result["rules"])
-    n_codes = sum(len(r.get("equipmentItemCode", [])) for r in result["rules"])
-    print(f"Generated {out.name}: {n_rules} rules, {n_codes} item codes")
+    # Only bump version if output changed
+    old_json = ""
+    if out.exists():
+        old_json = out.read_text()
+
+    new_json = json.dumps(result, indent=4) + "\n"
+
+    # Compare without version in name to detect real changes
+    old_comparable = re.sub(r'"name": ".*?"', '"name": ""', old_json)
+    new_comparable = re.sub(r'"name": ".*?"', '"name": ""', new_json)
+
+    if old_comparable != new_comparable:
+        bump_version(source, src_path)
+        result["name"] = source["name"]
+        new_json = json.dumps(result, indent=4) + "\n"
+        out.write_text(new_json)
+        n_rules = len(result["rules"])
+        n_codes = sum(len(r.get("equipmentItemCode", [])) for r in result["rules"])
+        print(f"Generated {out.name}: {n_rules} rules, {n_codes} item codes")
+    else:
+        print(f"No changes: {out.name}")
 
 
 def main():
