@@ -1,15 +1,6 @@
 {
-    "name": "Bagman v2",
+    "name": "Bagman v3",
     "rules": [
-        {
-            "name": "Full Rejuvs",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "itemCode": [
-                "rvl"
-            ]
-        },
         {
             "name": "Hide Junk",
             "enabled": true,
