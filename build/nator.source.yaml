@@ -1,4 +1,4 @@
-name: Nator v33
+name: Nator v34
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -79,6 +79,7 @@ common:
     # Gloves
     - Dracul's Grasp              # Vampirebone Gloves
     - Soul Drainer                # Vambraces
+    - Steelrend                   # Ogre Gauntlets
     - Chance Guards               # Chain Gloves
     - Magefist                    # Light Gauntlets
     # Boots
