@@ -1,4 +1,4 @@
-name: Nator v34
+name: Nator v36
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -67,10 +67,11 @@ common:
     - Skullder's Ire              # Russet Armor
     - Arkaine's Valor             # Balrog Skin
     - Duriel's Shell              # Cuirass
+    - Leviathan                   # Kraken Shell
+    - Templar's Might             # Sacred Armor
     # Weapons
     - Lightsabre                  # Phase Blade (also Azurewrath)
     - Stormlash                   # Scourge
-    - Wizardspike                 # Bone Knife
     - Arioc's Needle              # Hyperion Spear
     - Ondal's Wisdom              # Elder Staff
     - Blade of Ali Baba           # Tulwar
@@ -162,6 +163,8 @@ builds:
       - Lacerator                 # Winged Axe
       - Warshrike                 # Winged Knife
       - Razortail                 # Sharkskin Belt
+    bases:
+      - Death Mask                  # merc helm (starter)
 
   frenzy:
     unique:

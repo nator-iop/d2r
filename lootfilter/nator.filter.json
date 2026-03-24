@@ -1,5 +1,5 @@
 {
-    "name": "Nator v34",
+    "name": "Nator v36",
     "rules": [
         {
             "name": "Whites",
@@ -56,9 +56,10 @@
                 "xpl",
                 "upl",
                 "xrs",
+                "uld",
+                "uar",
                 "7cr",
                 "7fl",
-                "7dg",
                 "7sr",
                 "6cs",
                 "9fc",
@@ -146,6 +147,7 @@
                 "uh9",
                 "6ws",
                 "pab",
+                "xsk",
                 "7wa",
                 "7gs"
             ]
