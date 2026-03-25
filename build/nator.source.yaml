@@ -1,4 +1,4 @@
-name: Nator v36
+name: Nator v39
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -27,8 +27,7 @@ overrides:
 # White bases to Larzuk — non-eth, non-socketed
 # ═══════════════════════════════════════════════════════════════
 
-whites:
-  - Phase Blade                   # Grief, Last Wish, etc. (indestructible)
+whites: []
 
 # ═══════════════════════════════════════════════════════════════
 # Ultra-rare drops — always show
@@ -71,7 +70,6 @@ common:
     - Templar's Might             # Sacred Armor
     # Weapons
     - Lightsabre                  # Phase Blade (also Azurewrath)
-    - Stormlash                   # Scourge
     - Arioc's Needle              # Hyperion Spear
     - Ondal's Wisdom              # Elder Staff
     - Blade of Ali Baba           # Tulwar
@@ -163,14 +161,13 @@ builds:
       - Lacerator                 # Winged Axe
       - Warshrike                 # Winged Knife
       - Razortail                 # Sharkskin Belt
-    bases:
-      - Death Mask                  # merc helm (starter)
 
   frenzy:
     unique:
       - Arreat's Face             # Slayer Guard
       - Goblin Toe                # Light Plate Boots
       - Guardian Angel            # Templar Coat (merc)
+      - Stormlash                 # Scourge (also Horizon's Tornado)
     set:
       - Immortal King's Will      # Avenger Guard
       - Immortal King's Pillar    # War Boots

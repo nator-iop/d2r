@@ -1,19 +1,6 @@
 {
-    "name": "Nator v36",
+    "name": "Nator v39",
     "rules": [
-        {
-            "name": "Whites",
-            "enabled": true,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "equipmentRarity": [
-                "normal",
-                "hiQuality"
-            ],
-            "equipmentItemCode": [
-                "7cr"
-            ]
-        },
         {
             "name": "Unicorn Drops",
             "enabled": true,
@@ -59,7 +46,6 @@
                 "uld",
                 "uar",
                 "7cr",
-                "7fl",
                 "7sr",
                 "6cs",
                 "9fc",
@@ -100,7 +86,8 @@
                 "zvb",
                 "baa",
                 "tbt",
-                "xlt"
+                "xlt",
+                "7fl"
             ]
         },
         {
@@ -147,7 +134,6 @@
                 "uh9",
                 "6ws",
                 "pab",
-                "xsk",
                 "7wa",
                 "7gs"
             ]
