@@ -1,5 +1,5 @@
 {
-    "name": "Nator v39",
+    "name": "Nator v43",
     "rules": [
         {
             "name": "Unicorn Drops",
@@ -122,6 +122,8 @@
             "equipmentItemCode": [
                 "uit",
                 "utp",
+                "uth",
+                "uar",
                 "crs",
                 "7cr",
                 "7wc",

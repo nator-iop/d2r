@@ -1,4 +1,4 @@
-name: Nator v39
+name: Nator v43
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -108,6 +108,8 @@ common:
   bases:
     - Monarch                     # Spirit
     - Archon Plate                # Enigma, Fortitude, etc.
+    - Lacquered Plate             # Fortitude (higher def base)
+    - Sacred Armor                # Fortitude (highest def base)
     - Crystal Sword               # Spirit, Call to Arms
     - Phase Blade                 # Grief, Last Wish, Lawbringer
     # Merc polearms
