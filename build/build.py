@@ -51,6 +51,7 @@ class Resolver:
         }
         self.uniques = load_tsv("UniqueItems.txt", "index", "code")
         self.sets = load_tsv("SetItems.txt", "index", "item")
+        self.rotw = load_tsv("RotW.txt", "name", "code")
         self.errors = []
 
     def resolve(self, name, context=""):
@@ -60,7 +61,7 @@ class Resolver:
             return self.overrides[name]
 
         norm = normalize(name)
-        for table in [self.uniques, self.sets, self.bases]:
+        for table in [self.uniques, self.sets, self.bases, self.rotw]:
             # Exact match
             if name in table:
                 return table[name]

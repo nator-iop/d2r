@@ -1,0 +1,9 @@
+name	code	type
+Wraithstep	utb	unique
+Gheed's Wager	utc	unique
+Occult Codex	wad	base
+Horazon's Countenance	usk	set
+Horazon's Dominion	xpl	set
+Horazon's Hold	xlg	set
+Horazon's Legacy	utb	set
+Horazon's Secrets	wad	set
