@@ -1,5 +1,5 @@
 {
-    "name": "Nator v47",
+    "name": "Nator v48",
     "rules": [
         {
             "name": "Unicorn Drops",
@@ -69,6 +69,7 @@
                 "zlb",
                 "zhb",
                 "tbl",
+                "utc",
                 "dgr",
                 "8cs",
                 "uhm",
