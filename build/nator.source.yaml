@@ -1,4 +1,4 @@
-name: Nator v43
+name: Nator v47
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -106,22 +106,15 @@ common:
     - Laying of Hands             # Bramble Mitts
 
   bases:
-    - Monarch                     # Spirit
     - Archon Plate                # Enigma, Fortitude, etc.
     - Lacquered Plate             # Fortitude (higher def base)
     - Sacred Armor                # Fortitude (highest def base)
-    - Crystal Sword               # Spirit, Call to Arms
-    - Phase Blade                 # Grief, Last Wish, Lawbringer
     # Merc polearms
     - Giant Thresher              # Infinity, Insight
     - Thresher                    # Infinity, Insight
-    - Cryptic Axe                 # Infinity, Insight
-    - Colossus Voulge             # Infinity, Insight
-    - Great Poleaxe               # Infinity, Insight
     # Other
     - Thunder Maul
-    - Glorious Axe
-    - Bone Visage                 # Delirium
+
 
 # ═══════════════════════════════════════════════════════════════
 # Build-specific
@@ -175,9 +168,7 @@ builds:
       - Immortal King's Pillar    # War Boots
       - Immortal King's Detail    # War Belt
       - Trang-Oul's Girth         # Troll Belt
-    bases:
-      - Berserker Axe             # Beast, Breath of the Dying
-      - Balrog Blade              # Oath
+    bases: []
 
 # ═══════════════════════════════════════════════════════════════
 # Merc — ethereal uniques only

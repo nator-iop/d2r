@@ -1,5 +1,5 @@
 {
-    "name": "Nator v43",
+    "name": "Nator v47",
     "rules": [
         {
             "name": "Unicorn Drops",
@@ -120,24 +120,14 @@
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentItemCode": [
-                "uit",
                 "utp",
                 "uth",
                 "uar",
-                "crs",
-                "7cr",
                 "7wc",
                 "7s8",
-                "7pa",
-                "7vo",
-                "7h7",
                 "7gm",
-                "7gi",
-                "uh9",
                 "6ws",
-                "pab",
-                "7wa",
-                "7gs"
+                "pab"
             ]
         },
         {
