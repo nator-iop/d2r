@@ -1,4 +1,4 @@
-name: Nator v49
+name: Nator v51
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -54,7 +54,6 @@ common:
     - Valkyrie Wing               # Winged Helm
     - Blackhorn's Face            # Death Mask (also Hellwarden's Will, RotW)
     - Stealskull                  # Casque
-    - Crown of Thieves            # Grand Crown
     - Rockstopper                 # Sallet
     - Ravenlore                   # Sky Spirit (Druid)
     - Andariel's Visage           # Demonhead
@@ -147,9 +146,7 @@ builds:
       - Astreon's Iron Ward       # Caduceus
       - Herald of Zakarum         # Gilded Shield
       - Hand of Blessed Light     # Divine Sceptre
-    set:
-      - Griswold's Honor          # Vortex Shield
-      - Griswold's Redemption     # Caduceus
+    set: []
     bases:
       - Sacred Targe              # Exile, Spirit
 
