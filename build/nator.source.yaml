@@ -1,4 +1,4 @@
-name: Nator v56
+name: Nator v58
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -112,6 +112,9 @@ common:
     - Archon Plate                # Enigma, Fortitude, Authority
     - Lacquered Plate             # Fortitude, Authority
     - Sacred Armor                # Fortitude, Authority
+    - Shadow Plate                # Fortitude, Authority (eth merc)
+    - Hellforged Plate            # Fortitude, Authority (eth merc)
+    - Kraken Shell                # Fortitude, Authority (eth merc)
     # Merc polearms
     - Giant Thresher              # Infinity, Insight
     - Thresher                    # Infinity, Insight
