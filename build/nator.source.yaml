@@ -1,4 +1,4 @@
-name: Nator v51
+name: Nator v56
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -52,7 +52,7 @@ common:
     - Kira's Guardian             # Tiara
     - Vampire Gaze                # Grim Helm
     - Valkyrie Wing               # Winged Helm
-    - Blackhorn's Face            # Death Mask (also Hellwarden's Will, RotW)
+    - ~Hellwarden's Will           # Death Mask (RotW)
     - Stealskull                  # Casque
     - Rockstopper                 # Sallet
     - Ravenlore                   # Sky Spirit (Druid)
@@ -76,7 +76,7 @@ common:
     - Soul Drainer                # Vambraces
     - Steelrend                   # Ogre Gauntlets
     - Chance Guards               # Chain Gloves
-    - Magefist                    # Light Gauntlets
+    - ~Magefist                    # Light Gauntlets
     # Boots
     - Sandstorm Trek              # Scarabshell Boots
     - Shadow Dancer               # Myrmidon Greaves
@@ -136,7 +136,7 @@ builds:
     set:
       - Tal Rasha's Lidless Eye   # Swirling Crystal
       - Tal Rasha's Horadric Crest  # Death Mask
-      - Tal Rasha's Guardianship  # Lacquered Plate
+      - ~Tal Rasha's Guardianship  # Lacquered Plate — have it
       - Tal Rasha's Fine-Spun Cloth  # Mesh Belt
     bases:
       - Archon Staff              # Obsession

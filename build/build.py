@@ -74,10 +74,14 @@ class Resolver:
         return None
 
     def resolve_list(self, names, context=""):
-        """Resolve list of names to deduped codes, preserving order."""
+        """Resolve list of names to deduped codes, preserving order.
+        Items prefixed with ~ are skipped (kept in YAML but excluded from filter).
+        """
         codes = []
         seen = set()
         for name in names or []:
+            if name.startswith("~"):
+                continue
             code = self.resolve(name, context)
             if code and code not in seen:
                 codes.append(code)
