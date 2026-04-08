@@ -1,4 +1,4 @@
-name: Nator v58
+name: Nator v61
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -84,6 +84,7 @@ common:
     - War Traveler                # Battle Boots
     - Silkweave                   # Mesh Boots
     - Gore Rider                  # War Boots
+    - Marrowwalk                  # Boneweave Boots
     - Waterwalk                   # Sharkskin Boots
     # Belts
     - Arachnid Mesh               # Spiderweb Sash
@@ -99,7 +100,7 @@ common:
 
   set:
     - Guillaume's Face            # Winged Helm (crushing blow)
-    - Trang-Oul's Claws           # Heavy Bracers (caster)
+    - ~Trang-Oul's Claws           # Heavy Bracers (caster)
     - Laying of Hands             # Bramble Mitts
     # Horazon's Splendor (RotW warlock set)
     - Horazon's Countenance       # Demonhead
@@ -171,7 +172,7 @@ builds:
       - Immortal King's Will      # Avenger Guard
       - Immortal King's Pillar    # War Boots
       - Immortal King's Detail    # War Belt
-      - Trang-Oul's Girth         # Troll Belt
+      - ~Trang-Oul's Girth         # Troll Belt
     bases: []
 
 # ═══════════════════════════════════════════════════════════════

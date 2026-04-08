@@ -1,5 +1,5 @@
 {
-    "name": "Nator v58",
+    "name": "Nator v61",
     "rules": [
         {
             "name": "Unicorn Drops",
@@ -59,6 +59,7 @@
                 "xtb",
                 "xmb",
                 "xhb",
+                "umb",
                 "xvb",
                 "ulc",
                 "umc",
@@ -98,7 +99,6 @@
             ],
             "equipmentItemCode": [
                 "xhm",
-                "xmg",
                 "ulg",
                 "usk",
                 "xpl",
@@ -110,8 +110,7 @@
                 "zmb",
                 "ba5",
                 "xhb",
-                "zhb",
-                "utc"
+                "zhb"
             ]
         },
         {
