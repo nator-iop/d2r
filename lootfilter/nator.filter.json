@@ -1,6 +1,20 @@
 {
-    "name": "Nator v61",
+    "name": "Nator v62",
     "rules": [
+        {
+            "name": "Whites",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "normal",
+                "hiQuality"
+            ],
+            "equipmentItemCode": [
+                "7gm",
+                "utp"
+            ]
+        },
         {
             "name": "Unicorn Drops",
             "enabled": true,

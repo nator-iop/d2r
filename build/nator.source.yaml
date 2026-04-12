@@ -1,4 +1,4 @@
-name: Nator v61
+name: Nator v62
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -21,10 +21,12 @@ overrides:
   Immortal King's Will: ba5      # Avenger Guard (barb helm)
 
 # ═══════════════════════════════════════════════════════════════
-# White bases to Larzuk — non-eth, non-socketed
+# White bases to cube socket — non-eth, non-socketed
 # ═══════════════════════════════════════════════════════════════
 
-whites: []
+whites:
+  - Thunder Maul
+  - Archon Plate
 
 # ═══════════════════════════════════════════════════════════════
 # Ultra-rare drops — always show
@@ -110,17 +112,17 @@ common:
     - Horazon's Secrets           # Occult Codex
 
   bases:
-    - Archon Plate                # Enigma, Fortitude, Authority
-    - Lacquered Plate             # Fortitude, Authority
-    - Sacred Armor                # Fortitude, Authority
-    - Shadow Plate                # Fortitude, Authority (eth merc)
-    - Hellforged Plate            # Fortitude, Authority (eth merc)
-    - Kraken Shell                # Fortitude, Authority (eth merc)
+    - Archon Plate                # Enigma (3os), Authority (3os), Fortitude (4os)
+    - Lacquered Plate             # Authority (3os), Fortitude (4os)
+    - Sacred Armor                # Authority (3os), Fortitude (4os)
+    - Shadow Plate                # Authority (3os), Fortitude (4os, eth merc)
+    - Hellforged Plate            # Authority (3os), Fortitude (4os, eth merc)
+    - Kraken Shell                # Authority (3os), Fortitude (4os, eth merc)
     # Merc polearms
     - Giant Thresher              # Infinity, Insight
     - Thresher                    # Infinity, Insight
     # Other
-    - Thunder Maul
+    - Thunder Maul                # Fortitude (4os, eth merc)
 
 
 # ═══════════════════════════════════════════════════════════════
