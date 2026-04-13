@@ -113,7 +113,7 @@ def build(source):
     r = Resolver(source.get("overrides"))
     rules = []
 
-    # White bases (to Larzuk — non-eth, non-socketed)
+    # White bases (cube socket — non-eth, non-socketed)
     if items := source.get("whites"):
         codes = r.resolve_list(items, "whites")
         rules.append(make_rule("Whites", codes,
@@ -146,12 +146,17 @@ def build(source):
         codes = r.resolve_list(all_bases, "bases")
         rules.append(make_rule("Bases", codes, eth=True))
 
-    # Merc (eth uniques)
+    # Merc
     if m := source.get("merc", {}):
         if items := m.get("unique"):
             codes = r.resolve_list(items, "merc.unique")
-            rules.append(make_rule("Merc Eth Unique", codes,
-                                   rarity=["unique"], eth=True,
+            rules.append(make_rule("Merc Unique", codes,
+                                   rarity=["unique"],
+                                   quality=["elite", "exceptional"]))
+        if items := m.get("eth"):
+            codes = r.resolve_list(items, "merc.eth")
+            rules.append(make_rule("Merc Eth Bases", codes,
+                                   eth=True,
                                    quality=["elite", "exceptional"]))
 
     # Rule count check

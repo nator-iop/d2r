@@ -1,4 +1,4 @@
-name: Nator v62
+name: Nator v63
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -178,7 +178,7 @@ builds:
     bases: []
 
 # ═══════════════════════════════════════════════════════════════
-# Merc — ethereal uniques only
+# Merc
 # ═══════════════════════════════════════════════════════════════
 
 merc:
@@ -187,6 +187,7 @@ merc:
     - Reaper's Toll               # Thresher
     - Tomb Reaver                 # Cryptic Axe
     - Shaftstop                   # Mesh Armor
+  eth: []
 
 # ═══════════════════════════════════════════════════════════════
 # Other rules — category-based, rares, disabled, hide

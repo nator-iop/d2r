@@ -1,5 +1,5 @@
 {
-    "name": "Nator v62",
+    "name": "Nator v63",
     "rules": [
         {
             "name": "Whites",
@@ -147,10 +147,10 @@
             ]
         },
         {
-            "name": "Merc Eth Unique",
+            "name": "Merc Unique",
             "enabled": true,
             "ruleType": "show",
-            "filterEtherealSocketed": true,
+            "filterEtherealSocketed": false,
             "equipmentRarity": [
                 "unique"
             ],
