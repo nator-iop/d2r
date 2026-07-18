@@ -26,6 +26,35 @@ def normalize(s):
     return s.lower().replace(" ", "").replace("'", "").replace("-", "")
 
 
+def deep_merge(base, overlay):
+    """Merge overlay onto base. Dicts merge recursively, lists extend
+    (base items first, then overlay's), scalars are overridden by overlay.
+    Used by `include:` so a filter can inherit a base source and layer on top.
+    """
+    if isinstance(base, dict) and isinstance(overlay, dict):
+        merged = dict(base)
+        for key, val in overlay.items():
+            merged[key] = deep_merge(merged[key], val) if key in merged else val
+        return merged
+    if isinstance(base, list) and isinstance(overlay, list):
+        return base + overlay
+    return overlay
+
+
+def load_source(src_path):
+    """Load a source YAML, resolving an optional `include:` base source.
+    The included file is merged first, then this file's keys are layered on
+    (lists extend, scalars override) so shared content has one source of truth.
+    """
+    with open(src_path) as f:
+        source = yaml.safe_load(f)
+    inc = source.pop("include", None)
+    if inc:
+        base = load_source(src_path.parent / inc)
+        source = deep_merge(base, source)
+    return source
+
+
 def load_tsv(filename, key_col, val_col):
     """Load a TSV data file as {col[key]: col[val]}."""
     result = {}
@@ -159,8 +188,12 @@ def build(source):
                                    eth=True,
                                    quality=["elite", "exceptional"]))
 
+    # Keep Hide All last (an `include:` overlay may append other_rules after it)
+    other = source.get("other_rules", [])
+    other.sort(key=lambda rule: rule.get("name") == "Hide All")
+
     # Rule count check
-    n_other = len(source.get("other_rules", []))
+    n_other = len(other)
     n_total = len(rules) + n_other
     if n_total > 32:
         print(f"WARNING: {n_total} rules exceeds 32-rule game limit!")
@@ -203,8 +236,7 @@ def bump_version(source, src_path):
 
 def build_filter(src_path):
     """Build a single filter from a source YAML file."""
-    with open(src_path) as f:
-        source = yaml.safe_load(f)
+    source = load_source(src_path)
 
     result = build(source)
 

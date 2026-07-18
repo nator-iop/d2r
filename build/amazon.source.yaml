@@ -1,0 +1,108 @@
+name: Amazon v3
+
+# Amazon leveling filter.
+# Inherits ALL of nator's shared endgame BiS + rules (Whites, Unicorn, Unique,
+# Set, Merc, Accessories, Hide All, etc.) via `include:` below, then layers on
+# Amazon leveling gear. Shared endgame stays a single source of truth in
+# nator.source.yaml — the two filters can't drift apart.
+#
+# Build path (maxroll leveling guide): Poison Javelin + Exploding Arrow from
+# Normal to NM Act 3, then Lightning Fury / Charged Strike (Javazon) onward.
+include: nator.source.yaml
+
+# Data-file typos → correct names used below
+overrides:
+  Witchwild String: 8s8    # Data: "Whichwild String"
+  Goldstrike Arch: 8lw     # Data: "Godstrike Arch"
+
+# amazon_leveling appended to nator's build_order → its items merge into the
+# shared Unique/Set rules (0 new rules; shows at all levels as they drop).
+build_order: [amazon_leveling]
+
+builds:
+  amazon_leveling:
+    unique:
+      # ── Bows (Exploding Arrow / bowzon phase, Normal → NM A3) ──
+      - Pluckeye                  # Short Bow
+      - Witherstring              # Hunter's Bow (magic arrow)
+      - Rimeraven                 # Long Bow (+explosive arrow)
+      - Piercerib                 # Composite Bow
+      - Pullspite                 # Short Battle Bow
+      - Wizendraw                 # Long Battle Bow
+      - Hellclap                  # Short War Bow (fire)
+      - Blastbark                 # Long War Bow (+ama)
+      - Skystrike                 # Edge Bow (+ama, lightning)
+      - Riphook                   # Razor Bow
+      - Kuko Shakaku              # Cedar Bow (+7 explosive arrow — top EA bow)
+      - Endlesshail               # Double Bow (cold arrow)
+      - Witchwild String          # Short Siege Bow (2 sock, deadly strike)
+      - Cliffkiller               # Long Siege Bow (+2 ama)
+      - Magewrath                 # Rune Bow (+3 guided arrow)
+      - Goldstrike Arch           # Gothic Bow
+      - Eaglehorn                 # Crusader Bow (endgame bow, +ama)
+      # ── Crossbows (Exploding Arrow alt) ──
+      - Leadcrow                  # Light Crossbow
+      - Ichorsting                # Crossbow (pierce, poison)
+      - Hellcast                  # Heavy Crossbow (explosive arrow)
+      - Doomspittle               # Repeating Crossbow (+ama)
+      - Pus Spiter                # Siege Crossbow (poison)
+      - Gutsiphon                 # Demon Crossbow
+      # ── Javelins / throwing / spears (Poison Jav + LF/CS phase) ──
+      # (Titan's Revenge, Thunderstroke, Warshrike already in nator's javazon)
+      - Lycander's Aim            # Ceremonial Bow (+2 ama)
+      - Lycander's Flank          # Ceremonial Pike (+2 ama)
+      - The Impaler               # War Spear
+      - Deathbit                  # Battle Dart (throwing)
+      # ── Cheap leveling armor uniques (early upgrades) ──
+      - Bloodfist                 # Heavy Gloves (+40 life, IAS)
+      - Twitchthroe               # Studded Leather (IAS, block, stats)
+      - Blinkbat's Form           # Leather Armor (FRW, IAS)
+      - Tarnhelm                  # Skull Cap (+skill, MF)
+      - Hotspur                   # Boots (fire res, +life)
+      - Treads of Cthon           # Chain Boots (FRW)
+      - Gorefoot                  # Wyrmhide Boots
+
+    set:
+      # Classic leveling sets — pieces show at set rarity as they drop
+      # Vidala's Rig — the bowzon leveling set (cold arrow + skills)
+      - Vidala's Ambush           # Kite Shield / armor
+      - Vidala's Barb             # Long Battle Bow
+      - Vidala's Fetlock          # boots
+      - Vidala's Snare            # amulet
+      # Sigon's Complete Steel — all-round leveling (CB, resists, +life)
+      - Sigon's Gage
+      - Sigon's Guard
+      - Sigon's Sabot
+      - Sigon's Shelter
+      - Sigon's Visor
+      - Sigon's Wrap
+      # Angelic Raiment — huge AR + life (amulet + 2 rings staple)
+      - Angelic Halo
+      - Angelic Mantle
+      - Angelic Sickle
+      - Angelic Wings
+      # Arctic Gear — early bow set (Arctic Horn is a bow) + MF
+      - Arctic Binding
+      - Arctic Furs
+      - Arctic Horn
+      - Arctic Mitts
+      # Death's Disguise — gloves + belt (IAS, CBF, resists)
+      - Death's Guard
+      - Death's Hand
+      - Death's Touch
+      # Iratha's Finery — resists + stats
+      - Iratha's Coil
+      - Iratha's Collar
+      - Iratha's Cord
+      - Iratha's Cuff
+      # Cleglaw's Brace — slow target + crushing blow early
+      - Cleglaw's Claw
+      - Cleglaw's Pincers
+      - Cleglaw's Tooth
+      # Hsarus' Defense — early resists
+      - Hsarus' Iron Fist
+      - Hsarus' Iron Heel
+      - Hsarus' Iron Stay
+
+# Note: runes and gems already show by default (inherited Hide All only hides
+# equipment + ammo/scrolls/keys/potions/cheap gold), so no rules needed here.
