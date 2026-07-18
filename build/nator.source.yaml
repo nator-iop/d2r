@@ -1,4 +1,4 @@
-name: Nator v63
+name: Nator v65
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -75,7 +75,7 @@ common:
     - Homunculus                  # Hierophant Trophy
     # Gloves
     - Dracul's Grasp              # Vampirebone Gloves
-    - Soul Drainer                # Vambraces
+    - ~Soul Drainer                # Vambraces
     - Steelrend                   # Ogre Gauntlets
     - Chance Guards               # Chain Gloves
     - ~Magefist                    # Light Gauntlets
@@ -160,7 +160,7 @@ builds:
     unique:
       - Thunderstroke             # Matriarchal Javelin
       - Titan's Revenge           # Ceremonial Javelin
-      - Lacerator                 # Winged Axe
+      - ~Lacerator                 # Winged Axe
       - Warshrike                 # Winged Knife
       - Razortail                 # Sharkskin Belt
 
