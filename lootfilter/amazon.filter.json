@@ -1,5 +1,5 @@
 {
-    "name": "Amazon v3",
+    "name": "Amazon v4",
     "rules": [
         {
             "name": "Whites",
@@ -451,6 +451,22 @@
                 "9pa",
                 "9h9",
                 "9wc"
+            ]
+        },
+        {
+            "name": "Lvl Socket Bases",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": true,
+            "equipmentQuality": [
+                "normal",
+                "exceptional"
+            ],
+            "equipmentItemCode": [
+                "pax",
+                "brs",
+                "xsk",
+                "xrs"
             ]
         },
         {

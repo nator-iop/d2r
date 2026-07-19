@@ -1,4 +1,4 @@
-name: Amazon v3
+name: Amazon v4
 
 # Amazon leveling filter.
 # Inherits ALL of nator's shared endgame BiS + rules (Whites, Unicorn, Unique,
@@ -106,3 +106,17 @@ builds:
 
 # Note: runes and gems already show by default (inherited Hide All only hides
 # equipment + ammo/scrolls/keys/potions/cheap gold), so no rules needed here.
+
+other_rules:
+  # Socketed leveling runeword bases (filter can't match socket COUNT, only
+  # "is socketed"). Get exact sockets via Larzuk / vendor shopping / cube.
+  #   Poleaxe (pax)     3os -> Malice   (merc weapon)
+  #   Breast Plate (brs) 3os -> Peace    (+2 amazon skills, Valkyrie)
+  #   Death Mask (xsk)  3os -> gems/res  (merc helm)
+  #   Cuirass (xrs)     2os -> Stealth   (merc/player armor)
+  - name: Lvl Socket Bases
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: true
+    equipmentQuality: [normal, exceptional]
+    equipmentItemCode: [pax, brs, xsk, xrs]
