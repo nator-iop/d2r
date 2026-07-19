@@ -1,4 +1,4 @@
-name: Amazon v4
+name: Amazon v5
 
 # Amazon leveling filter.
 # Inherits ALL of nator's shared endgame BiS + rules (Whites, Unicorn, Unique,
@@ -115,7 +115,7 @@ other_rules:
   #   Death Mask (xsk)  3os -> gems/res  (merc helm)
   #   Cuirass (xrs)     2os -> Stealth   (merc/player armor)
   - name: Lvl Socket Bases
-    enabled: true
+    enabled: false
     ruleType: show
     filterEtherealSocketed: true
     equipmentQuality: [normal, exceptional]

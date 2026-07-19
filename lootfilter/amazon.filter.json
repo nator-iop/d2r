@@ -1,5 +1,5 @@
 {
-    "name": "Amazon v4",
+    "name": "Amazon v5",
     "rules": [
         {
             "name": "Whites",
@@ -455,7 +455,7 @@
         },
         {
             "name": "Lvl Socket Bases",
-            "enabled": true,
+            "enabled": false,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
