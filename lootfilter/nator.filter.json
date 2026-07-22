@@ -1,5 +1,5 @@
 {
-    "name": "Nator v69",
+    "name": "Nator v70",
     "rules": [
         {
             "name": "Farm Potions",
@@ -415,6 +415,23 @@
                 "armo",
                 "weap",
                 "acce"
+            ]
+        },
+        {
+            "name": "Lvl Sets",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "set"
+            ],
+            "equipmentItemCode": [
+                "hgl",
+                "tow",
+                "hbt",
+                "gth",
+                "ghm",
+                "hbl"
             ]
         },
         {

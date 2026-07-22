@@ -1,4 +1,4 @@
-name: Nator v69
+name: Nator v70
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -323,6 +323,19 @@ other_rules:
     filterEtherealSocketed: false
     equipmentRarity: [rare]
     equipmentCategory: [armo, weap, acce]
+
+  - name: Lvl Sets
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [set]
+    items:                         # Sigon's Complete Steel — leveling twink set
+      - Sigon's Gage               # Gauntlets
+      - Sigon's Guard              # Tower Shield
+      - Sigon's Sabot              # Greaves
+      - Sigon's Shelter            # Gothic Plate
+      - Sigon's Visor              # Great Helm
+      - Sigon's Wrap               # Plated Belt
 
   # ── Hide All (must be last) ──
 
