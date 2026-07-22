@@ -1,4 +1,4 @@
-name: Nator v67
+name: Nator v69
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -201,6 +201,14 @@ merc:
 # ═══════════════════════════════════════════════════════════════
 
 other_rules:
+  # Hoisted to the very top of the filter (top: true)
+  - name: Farm Potions
+    enabled: false
+    top: true
+    ruleType: show
+    filterEtherealSocketed: false
+    itemCode: [hp2, hp3, hp4, hp5, mp2, mp3, mp4, mp5, rvs, wms, yps, vps]
+
   # ── Enabled ──
 
   - name: Warlock Class Items
@@ -261,12 +269,6 @@ other_rules:
     equipmentRarity: [magic]
     equipmentCategory: [rings]
 
-  - name: Farm Potions
-    enabled: false
-    ruleType: show
-    filterEtherealSocketed: false
-    itemCode: [hp2, hp3, hp4, hp5, mp2, mp3, mp4, mp5, rvs, wms, yps, vps]
-
   # ── Pre-BiS / leveling (disabled) ──
 
   - name: Pre-BiS Unique Normal
@@ -314,6 +316,13 @@ other_rules:
     equipmentQuality: [exceptional]
     # 9vo/9s8/9pa/9h9/9wc Insight · xlm Lore · 9ma Black (CB)
     equipmentItemCode: [9vo, 9s8, 9pa, 9h9, 9wc, xlm, 9ma]
+
+  - name: Lvl Rares
+    enabled: true
+    ruleType: show
+    filterEtherealSocketed: false
+    equipmentRarity: [rare]
+    equipmentCategory: [armo, weap, acce]
 
   # ── Hide All (must be last) ──
 

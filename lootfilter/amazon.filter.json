@@ -1,6 +1,26 @@
 {
-    "name": "Amazon v7",
+    "name": "Amazon v9",
     "rules": [
+        {
+            "name": "Farm Potions",
+            "enabled": false,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "itemCode": [
+                "hp2",
+                "hp3",
+                "hp4",
+                "hp5",
+                "mp2",
+                "mp3",
+                "mp4",
+                "mp5",
+                "rvs",
+                "wms",
+                "yps",
+                "vps"
+            ]
+        },
         {
             "name": "Whites",
             "enabled": true,
@@ -337,26 +357,6 @@
             ]
         },
         {
-            "name": "Farm Potions",
-            "enabled": false,
-            "ruleType": "show",
-            "filterEtherealSocketed": false,
-            "itemCode": [
-                "hp2",
-                "hp3",
-                "hp4",
-                "hp5",
-                "mp2",
-                "mp3",
-                "mp4",
-                "mp5",
-                "rvs",
-                "wms",
-                "yps",
-                "vps"
-            ]
-        },
-        {
             "name": "Pre-BiS Unique Normal",
             "enabled": false,
             "ruleType": "show",
@@ -463,6 +463,20 @@
                 "9wc",
                 "xlm",
                 "9ma"
+            ]
+        },
+        {
+            "name": "Lvl Rares",
+            "enabled": true,
+            "ruleType": "show",
+            "filterEtherealSocketed": false,
+            "equipmentRarity": [
+                "rare"
+            ],
+            "equipmentCategory": [
+                "armo",
+                "weap",
+                "acce"
             ]
         },
         {

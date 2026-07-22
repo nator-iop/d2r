@@ -198,14 +198,18 @@ def build(source):
     if n_total > 32:
         print(f"WARNING: {n_total} rules exceeds 32-rule game limit!")
 
-    # Other rules (passthrough, with optional name resolution)
+    # Other rules (passthrough, with optional name resolution).
+    # A rule flagged `top: true` is hoisted to the very front of the filter.
+    top_rules, tail_rules = [], []
     for rule in source.get("other_rules", []):
         rule = dict(rule)
+        hoist = rule.pop("top", False)
         if "items" in rule:
             names = rule.pop("items")
             codes = r.resolve_list(names, rule.get("name", "other"))
             rule["equipmentItemCode"] = codes
-        rules.append(rule)
+        (top_rules if hoist else tail_rules).append(rule)
+    rules = top_rules + rules + tail_rules
 
     if r.errors:
         print("Failed to resolve:")
