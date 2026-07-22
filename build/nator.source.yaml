@@ -1,4 +1,4 @@
-name: Nator v70
+name: Nator v71
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -203,11 +203,12 @@ merc:
 other_rules:
   # Hoisted to the very top of the filter (top: true)
   - name: Farm Potions
-    enabled: false
+    enabled: true
     top: true
     ruleType: show
     filterEtherealSocketed: false
-    itemCode: [hp2, hp3, hp4, hp5, mp2, mp3, mp4, mp5, rvs, wms, yps, vps]
+    # top-3 healing (hp3/4/5) + top-3 mana (mp3/4/5) + small rejuv (rvs)
+    itemCode: [hp3, hp4, hp5, mp3, mp4, mp5, rvs]
 
   # ── Enabled ──
 

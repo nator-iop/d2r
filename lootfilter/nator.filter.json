@@ -1,24 +1,19 @@
 {
-    "name": "Nator v70",
+    "name": "Nator v71",
     "rules": [
         {
             "name": "Farm Potions",
-            "enabled": false,
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
             "itemCode": [
-                "hp2",
                 "hp3",
                 "hp4",
                 "hp5",
-                "mp2",
                 "mp3",
                 "mp4",
                 "mp5",
-                "rvs",
-                "wms",
-                "yps",
-                "vps"
+                "rvs"
             ]
         },
         {
