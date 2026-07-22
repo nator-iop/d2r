@@ -1,4 +1,4 @@
-name: Nator v65
+name: Nator v67
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -16,6 +16,9 @@ overrides:
   Tal Rasha's Guardianship: uth  # Data: "Tal Rasha's Howling Wind"
   Tal Rasha's Fine-Spun Cloth: zmb  # Data: "Tal Rasha's Fire-Spun Cloth"
 
+  # RotW-added uniques not present in 1.13 data files
+  Hellwarden's Will: xsk         # Death Mask (RotW) — Hammerdin BiS helm
+
   # Set items with non-obvious base codes
   Reaper's Toll: 7s8             # Data: "The Reaper's Toll"
   Immortal King's Will: ba5      # Avenger Guard (barb helm)
@@ -26,7 +29,11 @@ overrides:
 
 whites:
   - Thunder Maul
-  - Archon Plate
+  - Archon Plate                 # Enigma (3os), Fortitude/CoH (4os)
+  - Sacred Targe                 # Exile / Spirit / Phoenix (4os pala shield)
+  - Flail                        # Heart of the Oak (4os) — Hammerdin
+  - Crystal Sword                # Spirit / Call to Arms (5os)
+  - Phase Blade                  # Grief (5os) — Smiter
 
 # ═══════════════════════════════════════════════════════════════
 # Ultra-rare drops — always show
@@ -54,7 +61,7 @@ common:
     - Kira's Guardian             # Tiara
     - Vampire Gaze                # Grim Helm
     - Valkyrie Wing               # Winged Helm
-    - ~Hellwarden's Will           # Death Mask (RotW)
+    - Hellwarden's Will            # Death Mask (RotW) — Hammerdin helm
     - Stealskull                  # Casque
     - Rockstopper                 # Sallet
     - Ravenlore                   # Sky Spirit (Druid)
@@ -78,7 +85,7 @@ common:
     - ~Soul Drainer                # Vambraces
     - Steelrend                   # Ogre Gauntlets
     - Chance Guards               # Chain Gloves
-    - ~Magefist                    # Light Gauntlets
+    - Magefist                     # Light Gauntlets — FCR (Hammerdin)
     # Boots
     - Sandstorm Trek              # Scarabshell Boots
     - Shadow Dancer               # Myrmidon Greaves
@@ -102,7 +109,7 @@ common:
 
   set:
     - Guillaume's Face            # Winged Helm (crushing blow)
-    - ~Trang-Oul's Claws           # Heavy Bracers (caster)
+    - Trang-Oul's Claws            # Heavy Bracers — 20 FCR (Hammerdin caster gloves)
     - Laying of Hands             # Bramble Mitts
     # Horazon's Splendor (RotW warlock set)
     - Horazon's Countenance       # Demonhead
@@ -293,18 +300,20 @@ other_rules:
     equipmentItemCode: [xsk, xh9, xea, xrs, xtp]
 
   - name: Lvl Bases Normal
-    enabled: false
+    enabled: true
     ruleType: show
     filterEtherealSocketed: true
     equipmentQuality: [normal]
-    equipmentItemCode: [crs, bsd, lrg, kit, pax, hal, wsc, scy]
+    # crs/bsd Spirit · lrg/kit Ancients'/Rhyme · pax/hal/wsc/scy Insight · skp/msk Lore · mac Black (CB)
+    equipmentItemCode: [crs, bsd, lrg, kit, pax, hal, wsc, scy, skp, msk, mac]
 
   - name: Lvl Bases Exceptional
-    enabled: false
+    enabled: true
     ruleType: show
     filterEtherealSocketed: true
     equipmentQuality: [exceptional]
-    equipmentItemCode: [9vo, 9s8, 9pa, 9h9, 9wc]
+    # 9vo/9s8/9pa/9h9/9wc Insight · xlm Lore · 9ma Black (CB)
+    equipmentItemCode: [9vo, 9s8, 9pa, 9h9, 9wc, xlm, 9ma]
 
   # ── Hide All (must be last) ──
 

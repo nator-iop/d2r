@@ -1,5 +1,5 @@
 {
-    "name": "Amazon v5",
+    "name": "Amazon v7",
     "rules": [
         {
             "name": "Whites",
@@ -12,7 +12,11 @@
             ],
             "equipmentItemCode": [
                 "7gm",
-                "utp"
+                "utp",
+                "pab",
+                "fla",
+                "crs",
+                "7cr"
             ]
         },
         {
@@ -47,6 +51,7 @@
                 "ci2",
                 "xh9",
                 "xhm",
+                "xsk",
                 "xlm",
                 "xkp",
                 "dre",
@@ -66,6 +71,7 @@
                 "uvg",
                 "uhg",
                 "mgl",
+                "tgl",
                 "uvb",
                 "uhb",
                 "utb",
@@ -145,6 +151,7 @@
             ],
             "equipmentItemCode": [
                 "xhm",
+                "xmg",
                 "ulg",
                 "usk",
                 "xpl",
@@ -420,7 +427,7 @@
         },
         {
             "name": "Lvl Bases Normal",
-            "enabled": false,
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
@@ -434,12 +441,15 @@
                 "pax",
                 "hal",
                 "wsc",
-                "scy"
+                "scy",
+                "skp",
+                "msk",
+                "mac"
             ]
         },
         {
             "name": "Lvl Bases Exceptional",
-            "enabled": false,
+            "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": true,
             "equipmentQuality": [
@@ -450,7 +460,9 @@
                 "9s8",
                 "9pa",
                 "9h9",
-                "9wc"
+                "9wc",
+                "xlm",
+                "9ma"
             ]
         },
         {
