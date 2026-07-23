@@ -1,4 +1,4 @@
-name: Nator v71
+name: Nator v74
 
 # Names that differ from 1.13 data files (D2R additions, typos, old names)
 overrides:
@@ -8,6 +8,7 @@ overrides:
   Thundergod's Vigor: zhb        # Data: "Thudergod's Vigor"
   Verdungo's Hearty Cord: umc    # Data: "Verdugo's Hearty Cord"
   Griswold's Redemption: 7ws     # Data: "Griswolds's Redemption"
+  Kris: kri                      # Data: "Kriss"
 
   # Renamed/different in data
   Death's Fathom: obf            # Data: "Fathom"
@@ -18,6 +19,10 @@ overrides:
 
   # RotW-added uniques not present in 1.13 data files
   Hellwarden's Will: xsk         # Death Mask (RotW) — Hammerdin BiS helm
+
+  # Budget uniques whose data-file name differs
+  Que-Hegan's Wisdom: xtp        # Mage Plate
+  Peasant Crown: xap             # War Hat
 
   # Set items with non-obvious base codes
   Reaper's Toll: 7s8             # Data: "The Reaper's Toll"
@@ -34,6 +39,8 @@ whites:
   - Flail                        # Heart of the Oak (4os) — Hammerdin
   - Crystal Sword                # Spirit / Call to Arms (5os)
   - Phase Blade                  # Grief (5os) — Smiter
+  - Mage Plate                   # Enigma (Jah-Ith-Ber, 3os) — low-str caster base
+  - Kris                         # Void (Thul-Zod-Ist, 3os) — RotW
 
 # ═══════════════════════════════════════════════════════════════
 # Ultra-rare drops — always show
@@ -120,6 +127,7 @@ common:
 
   bases:
     - Archon Plate                # Enigma (3os), Authority (3os), Fortitude (4os)
+    - Mage Plate                  # Enigma (3os) — low-str caster base
     - Lacquered Plate             # Authority (3os), Fortitude (4os)
     - Sacred Armor                # Authority (3os), Fortitude (4os)
     - Shadow Plate                # Authority (3os), Fortitude (4os, eth merc)
@@ -130,13 +138,14 @@ common:
     - Thresher                    # Infinity, Insight
     # Other
     - Thunder Maul                # Fortitude (4os, eth merc)
+    - Kris                        # Void (3os, RotW)
 
 
 # ═══════════════════════════════════════════════════════════════
 # Build-specific
 # ═══════════════════════════════════════════════════════════════
 
-build_order: [sorc, hammerdin, javazon, frenzy]
+build_order: [sorc, hammerdin, smite, javazon, frenzy]
 
 builds:
   sorc:
@@ -159,9 +168,22 @@ builds:
       - Astreon's Iron Ward       # Caduceus
       - Herald of Zakarum         # Gilded Shield
       - Hand of Blessed Light     # Divine Sceptre
+      # Budget bridge gear
+      - Wizardspike               # Bone Knife — FCR caster weapon
+      - Lidless Wall              # Grim Shield — +1 skills, FCR
+      - Frostburn                 # Gauntlets — +max mana, FCR
+      - Que-Hegan's Wisdom        # Mage Plate — +1 skills, FCR
+      - Peasant Crown             # War Hat — +1 skills, FRW
     set: []
     bases:
       - Sacred Targe              # Exile, Spirit
+
+  smite:
+    unique:
+      # Budget bridge gear (BiS smiter gear lives in the shared common pool)
+      - Venom Grip                # Demonhide Gloves — Crushing Blow
+      - Bloodfist                 # Heavy Gloves — life/IAS/FHR
+      - Moser's Blessed Circle    # Round Shield — resist + 2os block
 
   javazon:
     unique:
@@ -233,12 +255,13 @@ other_rules:
     equipmentRarity: [set]
     equipmentCategory: [amule]
 
-  - name: Rare Diadems
+  - name: Rare Scepters & Circlets
     enabled: true
     ruleType: show
     filterEtherealSocketed: false
     equipmentRarity: [rare]
-    items: [Diadem]
+    # scepters (hammerdin +skill weapons) + all circlets
+    equipmentItemCode: [scp, gsc, wsp, 9sc, 9qs, 9ws, 7sc, 7qs, 7ws, ci0, ci1, ci2, ci3]
 
   # ── Farming (disabled) ──
 

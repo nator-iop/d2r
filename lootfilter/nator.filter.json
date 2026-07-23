@@ -1,5 +1,5 @@
 {
-    "name": "Nator v71",
+    "name": "Nator v74",
     "rules": [
         {
             "name": "Farm Potions",
@@ -31,7 +31,9 @@
                 "pab",
                 "fla",
                 "crs",
-                "7cr"
+                "7cr",
+                "xtp",
+                "kri"
             ]
         },
         {
@@ -112,6 +114,14 @@
                 "7ws",
                 "pa9",
                 "9ws",
+                "7dg",
+                "xsh",
+                "hgl",
+                "xtp",
+                "xap",
+                "xlg",
+                "vgl",
+                "xml",
                 "amf",
                 "ama",
                 "7bk",
@@ -154,6 +164,7 @@
             "filterEtherealSocketed": true,
             "equipmentItemCode": [
                 "utp",
+                "xtp",
                 "uth",
                 "uar",
                 "uul",
@@ -162,6 +173,7 @@
                 "7wc",
                 "7s8",
                 "7gm",
+                "kri",
                 "6ws",
                 "pab"
             ]
@@ -226,7 +238,7 @@
             ]
         },
         {
-            "name": "Rare Diadems",
+            "name": "Rare Scepters & Circlets",
             "enabled": true,
             "ruleType": "show",
             "filterEtherealSocketed": false,
@@ -234,6 +246,18 @@
                 "rare"
             ],
             "equipmentItemCode": [
+                "scp",
+                "gsc",
+                "wsp",
+                "9sc",
+                "9qs",
+                "9ws",
+                "7sc",
+                "7qs",
+                "7ws",
+                "ci0",
+                "ci1",
+                "ci2",
                 "ci3"
             ]
         },
